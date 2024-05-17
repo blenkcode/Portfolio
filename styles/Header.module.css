@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+
+.container {
+
+
+    background-color: #0F182A;
+    display: grid;
+  grid-template-columns: 8% 44% 47%; /* Two columns each taking half of the available space */
+  grid-template-rows: 1fr; /* Four rows */
+    margin: 0px;
+    height: 100px;
+    width: 100%;
+    
+  }
+
+
+.logo{
+    grid-row: 1 / 2;
+  grid-column: 1 / 2;
+   width: 70px;
+   height: 70px;
+   margin-left: 22px;
+   padding-top: 5px;
+   margin-top: 12px;
+  
+}
+
+.horizontalline{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    height: 1px; /* Thin line */
+    background-color: rgb(80, 150, 150);
+    width: 130%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 51px;
+}
+.list{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    color: rgb(255, 255, 255);
+    display:flex;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+    background-color: #0F182A;
+    width: 100%;
+    justify-content: space-around;
+    
+    
+    
+}
+

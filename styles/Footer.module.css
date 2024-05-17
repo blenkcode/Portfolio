@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+
+.cardcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /* Two columns each taking half of the available space */
+    grid-template-rows: 600px 600px 600px; /* Four rows */
+    background-color: #0F182A;
+}
+@keyframes fade-in{
+    from{scale: .8; opacity:0;}
+    to{scale: 1;opacity:1}
+}
+
+.card1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    background-color: #0F182A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:700px
+}
+.card2{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    margin-top:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:700px
+}
+.card3{
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    background-color: #0F182A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:700px
+    
+}
+.card4{
+    grid-row:2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+     margin-top:60px;
+     animation: fade-in linear;
+     animation-timeline: view();
+     animation-range-start:cover;
+     animation-range-end:700px
+    
+}
+.card5{
+    grid-row:3/4;
+    grid-column: 2 / 4;
+    background-color: #0F182A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:700px
+    
+}
+.card6{
+    grid-row: 3/4;
+    grid-column: 4 / 5;
+   
+   width: 500px;
+    border-radius: 20px;
+    
+    
+    margin-top:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:700px
+}
+
+.scrollcontainer{
+    height: 290px;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    background-color: #ffffff;
+    width: 500px;
+    height:200px;
+    border-radius: 20px;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(80, 150, 150);
+    
+}
+
+.contentleft{
+    background-color: #ffffff;
+    width: 500px;
+    height:200px;
+    border-radius: 20px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+     display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+    background-color: rgb(80, 150, 150);
+}
+.scroll{
+    width: 120px;
+    height:30px;
+  border-radius: 20px;
+  background-color: rgb(80, 150, 150);
+    animation: laby 2s ease-in infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+    font-size: smaller;
+    box-shadow: 12px 12px 16px 0px rgb(0 0 0 / 71%);
+    margin-top:120px;
+    padding: 2px;
+    
+   
+}
+@keyframes laby {
+    0%{
+
+    
+    }100%{
+        transform: translateY(60px);
+        
+    }
+}
+
+.site{
+    width: 500px;
+    border-radius: 10px;
+      margin-top: 50px;
+}
+
+
+  
+  .doodlea{
+    width: 40px;
+    position: absolute;
+    z-index: 50;
+    left: 140px;
+    top:1020px;
+    rotate: 120deg;;
+  }
+    
+  .doodleb{
+    width: 35px;
+    position: absolute;
+    z-index: 50;
+    left: 1700px;
+    top:1700px;
+    rotate: 190deg;;
+  }
+  .doodlec{
+    width: 20px;
+    position: absolute;
+    z-index: 50;
+    left: 1650px;
+    top:1790px;
+    rotate: 50deg;;
+  }
