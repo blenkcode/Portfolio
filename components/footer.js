@@ -15,12 +15,19 @@ function Footer() {
           <div className={styles.mywork}>
             <div className={styles.cardcontainer}>
               <div className={styles.card1}>
-                <img className={styles.site} src="site.jpeg"></img>
+                <a href="https://instagram-clone-five-theta.vercel.app/">
+                  {" "}
+                  <img className={styles.site} src="instacopy.png"></img>
+                </a>
               </div>
               <div className={styles.card2}>
                 <div className={styles.content}>
-                  <h2>My Work1</h2>
-                  <p> This is my front-end development for this website</p>
+                  <h2>Instagram CopyCat</h2>
+                  <p>
+                    {" "}
+                    Fully Fonctional Homepage of Instagram's desktop version
+                    React.js, Redux MongoDB
+                  </p>
                 </div>
               </div>
               <div className={styles.card3}>
