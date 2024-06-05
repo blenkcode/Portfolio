@@ -173,8 +173,8 @@ background-color: rgba(255, 255, 255, 0.163);
   @media (max-width: 1300px) {
     .cardcontainer{
       display: grid;
-      grid-template-columns: 1fr 1fr ; /* Two columns each taking half of the available space */
-      grid-template-rows: 1fr 1fr  ; /* Four rows */
+      grid-template-columns: 1fr ; /* Two columns each taking half of the available space */
+      grid-template-rows: 1fr 1fr 1fr 1fr ; /* Four rows */
    
   }
   @keyframes fade-in{
@@ -185,44 +185,50 @@ background-color: rgba(255, 255, 255, 0.163);
   .titlework{
       
       background-color: #0f182a9a;
-      height: 50px;
+      height: 40px;
       color: white;
       font-family: "Source Code Pro", monospace;
       font-weight: 300;
-      font-size: 25px;
+      font-size: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 0px;
+      margin: 0px;
+
   }
   .mywork{
       background-image: linear-gradient(63deg, #509696 5%, #305977 26%, #0f182ac0 100%);
   }
   .card1{
-      grid-row: 1 / 2;
-      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      grid-column: 1 / 2;
   background-color: rgba(255, 255, 255, 0.163);
       display: flex;
-      width: 70%;
-      margin-left: 15%;
+      flex-direction: column-reverse;
+      width: 100%;
+
       justify-content: center;
       align-items: center;
       animation: fade-in linear;
       animation-timeline: view();
       animation-range-start:cover;
       animation-range-end:400px;
-      margin-top: 100px;
-      border-top-left-radius: 500px;
-      border-bottom-left-radius: 200px;
+    margin:0px;
+    margin-top:50px;
+    
+      border-bottom-left-radius: 500px;
+      border-bottom-right-radius: 200px;
+      border-top-right-radius: 240px;
   }
   .card2{
-      grid-row: 2 / 3;
-      grid-column: 1/ 3;
+      grid-row: 3 / 5;
+      grid-column: 1/ 2;
       background-color: rgba(255, 255, 255, 0.163);
       display: flex;
-      width: 70%;
-      margin-left: 15%;
-      margin-top: 100px;
+      flex-direction: column;
+      width: 100%;
+
+     
       display: flex;
       justify-content: center;
       align-items: center;
@@ -232,6 +238,8 @@ background-color: rgba(255, 255, 255, 0.163);
       animation-range-end:400px;
       border-top-right-radius: 500px;
       border-bottom-right-radius: 200px;
+      margin:0px;
+      margin-top:150px;
   }
   
   
@@ -239,39 +247,49 @@ background-color: rgba(255, 255, 255, 0.163);
       height: 290px;
       display: flex;
       justify-content: center;
+      display: none;
   }
   .titlecontent{
   
     font-family: "Lexend", sans-serif;
     font-size: 40px;
+    margin-top:5px;
+    margin-bottom: 8px;
   }
   .content{
-      background-color: #ffffff;
-      width: 200px;
-      height:100px;
-     
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      background-color: rgb(205, 205, 205);
-      font-family: "Source Code Pro", monospace;
+    background-color: #9e1313;
+    width:80%;
+    height:100%;
+    font-size: 40px;
+
+     display: flex;
+     justify-content: center;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+    background-color: rgb(245, 255, 255);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 10px;
       
   }
   
   .contentleft{
-      background-color: #ffffff;
-      width:30%;
-      height:50%;
-   
+      background-color: #9e1313;
+      width:50%;
+      height:70%;
+      font-size: 40px;
   
        display: flex;
-      justify-content: flex-start;
+       justify-content: center;
       flex-direction: column;
       font-family: "Source Code Pro", monospace;
       background-color: rgb(245, 255, 255);
       padding-left: 50px;
+      border-radius: 10px;
+      border-top-left-radius: 70px;
       padding-right: 50px;
-      font-size: 10px;
+      font-size: 12px;
+   
   }
   .scroll{
       width: 120px;
@@ -316,15 +334,18 @@ background-color: rgba(255, 255, 255, 0.163);
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     background-color: rgba(255, 255, 255, 0.488);
-     width: 50%;
-     border-top-left-radius: 50px;
-     border-bottom-left-radius: 50px;
+     background-color: rgba(255, 255, 255, 0);
+     width: 100%;
+     height:300px;
+     border-top-left-radius: 200px;
+     border-bottom-left-radius: 500px;
+     
     }
   
   .imgupper{
       display: flex;
       padding:10px;
+
   }
   
   

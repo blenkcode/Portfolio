@@ -67,8 +67,9 @@ function Footer() {
                   leveling, success and cosmetics rewards.
                 </p>
                 <p>
-                  Technologies invloved : Javascript, React-Native, Next.js
-                  Redux, MongoDB, CSS, Figma, Express, Node.js, external API.
+                  Technologies invloved : Javascript, React-Native, Expo,
+                  Next.js Redux, MongoDB, CSS, Figma, Express, Node.js, external
+                  API.
                 </p>
               </div>
             </div>

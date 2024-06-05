@@ -44,3 +44,51 @@
   }
 
 
+  @media (max-width: 1300px) {
+ 
+
+    .navigationcontainer{
+      position:relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: rgba(255, 255, 255, 0.488);
+     width: 700px;
+    }
+    .navigation{
+      position:relative; 
+      width: 70px;
+      height:70px;
+      background-color: #0F182A;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition:0.8s;
+      transition-delay: 2s;
+    }
+  
+  .imgupper{
+      display: flex;
+      padding:10px;
+  }
+  
+  .imglower{
+      display: flex;
+  }
+  
+  
+  
+  
+    .imgretracted{
+      width: 190px;
+      height: 390px;
+      transition: 1s;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 10px 5px 13px 6px rgb(141, 141, 141)
+    }
+  
+  }
+  
