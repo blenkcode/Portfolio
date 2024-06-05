@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+
+.navigationcontainer{
+    position:relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgba(255, 255, 255, 0.488);
+   width: 700px;
+  }
+  .navigation{
+    position:relative; 
+    width: 70px;
+    height:70px;
+    background-color: #0F182A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.8s;
+    transition-delay: 2s;
+  }
+
+.imgupper{
+    display: flex;
+    padding:10px;
+}
+
+.imglower{
+    display: flex;
+}
+
+
+
+
+  .imgretracted{
+    width: 190px;
+    height: 390px;
+    transition: 1s;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 10px 5px 13px 6px rgb(141, 141, 141)
+  }
+
+

@@ -5,7 +5,7 @@
     height:110%;
     width: 100%;
     z-index: 10;
-    background-color: #0F182A;
+
   
 display: flex;
     align-items: center;
@@ -26,12 +26,17 @@ display: flex;
   
   }
 
-
+.cards1{
+  display: flex;
+}
+.cards2{
+  display: flex;
+}
 
   .card{
-    width: 80px;
-    height: 80px;
-    background-color: rgba(117, 117, 117, 0.504);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(137, 135, 135, 0.907);
     margin: 5px;
     border-radius: 20px;
     padding: 10px;
@@ -40,12 +45,88 @@ display: flex;
   
   }
 :hover.card{
-  width: 100px;
-  height:100px;
+  width: 80px;
+  height:80px;
   transition: all 1s ease;
   margin: 20px;
-  background-color: rgba(117, 117, 117, 0.813);
+  background-color: rgba(255, 255, 255, 0.85);
   -webkit-transition:  0.6s;
 }
+@media (max-width: 1500px) {
+ 
+  .card{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(137, 135, 135, 0.907);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-transition:  0.5s;
+   
+  
+  }
+:hover.card{
+  width: 80px;
+  height:80px;
+  transition: all 1s ease;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition:  0.6s;
+}
+.main {
+   
+   
+  
+  height:110%;
+  width: 100%;
+  z-index: 10;
+  margin-left: 130px;
+  margin-top: 100px;
 
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+}
+@media (max-width: 1300px) {
+ 
+  .card{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(137, 135, 135, 0.907);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-transition:  0.5s;
+   
+  
+  }
+:hover.card{
+  width: 40px;
+  height:40px;
+  transition: all 1s ease;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition:  0.6s;
+}
+.main {
+   
+   
+  
+  height:100%;
+  width: 100%;
+  z-index: 10;
+  margin:0px;
+ 
+
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+}
 

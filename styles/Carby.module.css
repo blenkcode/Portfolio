@@ -1,0 +1,94 @@
+.navigationcontainer{
+    position:relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .navigation{
+    position:relative; 
+    width: 70px;
+    height:70px;
+    background-color: #0F182A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.8s;
+    transition-delay: 2s;
+  }
+  .menuToggle{
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: #0F182A;
+    border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+display: flex;
+top:95%;
+justify-content: center;
+align-items: center;
+
+
+  }
+
+  .btnmodal{
+    cursor: pointer;
+  }
+  .spans{
+    position: absolute;
+    width: 7px;
+    height:7px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border:0px  solid black;
+    transform:translate(calc(14px * var(--x)),calc(14px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+  z-index: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .spanstransformed {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #0F182A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:0px  solid black;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    /* transform:translate(calc(250px * var(--x)),calc(350px * var(--y))); */
+  
+  }
+
+  .imgretracted{
+    width: 1px;
+    height: 1px;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    transition-delay: calc(0.12s * var(--i));
+    border-radius: 20px;
+  }
+
+  .imgtransformed{
+    width: 150px;
+    height: 250px;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    border-radius: 20px;
+ 
+    transform:translate(calc(150px * var(--x)),calc(250px * var(--y)));
+  
+  }
+  :hover.imgtransformed{
+    width: 300px;
+    height: 350px;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    border-radius: 20px;
+z-index: 100;
+    transform:translate(calc(250px * var(--x)),calc(350px * var(--y)));
+  
+  }

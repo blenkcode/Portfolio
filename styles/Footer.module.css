@@ -1,130 +1,109 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
 
 .cardcontainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /* Two columns each taking half of the available space */
-    grid-template-rows: 600px 600px 600px; /* Four rows */
-    background-color: #0F182A;
+    grid-template-columns: 1fr 1fr; /* Two columns each taking half of the available space */
+    grid-template-rows: 1fr 1fr ; /* Four rows */
+ 
 }
 @keyframes fade-in{
     from{scale: .8; opacity:0;}
     to{scale: 1;opacity:1}
 }
 
+.titlework{
+    
+    background-color: #0f182a9a;
+    height: 80px;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.mywork{
+    background-image: linear-gradient(63deg, #509696 5%, #305977 26%, #0f182ac0 100%);
+}
 .card1{
     grid-row: 1 / 2;
-    grid-column: 2 / 4;
-    background-color: #0F182A;
+    grid-column: 1 / 3;
+background-color: rgba(255, 255, 255, 0.163);
     display: flex;
+    width: 70%;
+    margin-left: 15%;
     justify-content: center;
     align-items: center;
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start:cover;
-    animation-range-end:700px
+    animation-range-end:400px;
+    margin-top: 100px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 200px;
 }
 .card2{
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
-    margin-top:60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:700px
-}
-.card3{
     grid-row: 2 / 3;
-    grid-column: 3 / 5;
-    background-color: #0F182A;
+    grid-column: 1/ 3;
+    background-color: rgba(255, 255, 255, 0.163);
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start:cover;
-    animation-range-end:700px
-    
+    animation-range-end:400px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 200px;
 }
-.card4{
-    grid-row:2 / 3;
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-     margin-top:60px;
-     animation: fade-in linear;
-     animation-timeline: view();
-     animation-range-start:cover;
-     animation-range-end:700px
-    
-}
-.card5{
-    grid-row:3/4;
-    grid-column: 2 / 4;
-    background-color: #0F182A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:700px
-    
-}
-.card6{
-    grid-row: 3/4;
-    grid-column: 4 / 5;
-   
-   width: 500px;
-    border-radius: 20px;
-    
-    
-    margin-top:60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:700px
-}
+
 
 .scrollcontainer{
     height: 290px;
     display: flex;
     justify-content: center;
 }
+.titlecontent{
+
+  font-family: "Lexend", sans-serif;
+  font-size: 40px;
+}
 .content{
     background-color: #ffffff;
     width: 500px;
     height:200px;
-    border-radius: 20px;
-    border-bottom-right-radius: 200px;
-    border-top-right-radius: 200px;
+   
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgb(80, 150, 150);
+    background-color: rgb(205, 205, 205);
+    font-family: "Source Code Pro", monospace;
     
 }
 
 .contentleft{
     background-color: #ffffff;
-    width: 500px;
-    height:200px;
-    border-radius: 20px;
-    border-bottom-left-radius: 200px;
-    border-top-left-radius: 200px;
+    width:50%;
+    height:100%;
+ 
+
      display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+    background-color: rgb(245, 255, 255);
     padding-left: 50px;
-    background-color: rgb(80, 150, 150);
+    padding-right: 50px;
+    font-size: 19px;
 }
 .scroll{
     width: 120px;
@@ -160,29 +139,201 @@
 }
 
 
+
+
+
+  .navigationcontainer{
+    position:relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgba(255, 255, 255, 0.488);
+   width: 50%;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
+  }
+
+.imgupper{
+    display: flex;
+    padding:10px;
+}
+
+
+  .imgretracted{
+    width: 200px;
+    height: 410px;
+    transition: 1s;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 10px 5px 13px 6px rgb(141, 141, 141)
+  }
+
+
+  @media (max-width: 1300px) {
+    .cardcontainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr ; /* Two columns each taking half of the available space */
+      grid-template-rows: 1fr 1fr  ; /* Four rows */
+   
+  }
+  @keyframes fade-in{
+      from{scale: .8; opacity:0;}
+      to{scale: 1;opacity:1}
+  }
   
-  .doodlea{
-    width: 40px;
-    position: absolute;
-    z-index: 50;
-    left: 140px;
-    top:1020px;
-    rotate: 120deg;;
+  .titlework{
+      
+      background-color: #0f182a9a;
+      height: 50px;
+      color: white;
+      font-family: "Source Code Pro", monospace;
+      font-weight: 300;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0px;
   }
-    
-  .doodleb{
-    width: 35px;
-    position: absolute;
-    z-index: 50;
-    left: 1700px;
-    top:1700px;
-    rotate: 190deg;;
+  .mywork{
+      background-image: linear-gradient(63deg, #509696 5%, #305977 26%, #0f182ac0 100%);
   }
-  .doodlec{
-    width: 20px;
-    position: absolute;
-    z-index: 50;
-    left: 1650px;
-    top:1790px;
-    rotate: 50deg;;
+  .card1{
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+  background-color: rgba(255, 255, 255, 0.163);
+      display: flex;
+      width: 70%;
+      margin-left: 15%;
+      justify-content: center;
+      align-items: center;
+      animation: fade-in linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:400px;
+      margin-top: 100px;
+      border-top-left-radius: 500px;
+      border-bottom-left-radius: 200px;
+  }
+  .card2{
+      grid-row: 2 / 3;
+      grid-column: 1/ 3;
+      background-color: rgba(255, 255, 255, 0.163);
+      display: flex;
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fade-in linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:400px;
+      border-top-right-radius: 500px;
+      border-bottom-right-radius: 200px;
+  }
+  
+  
+  .scrollcontainer{
+      height: 290px;
+      display: flex;
+      justify-content: center;
+  }
+  .titlecontent{
+  
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+  }
+  .content{
+      background-color: #ffffff;
+      width: 200px;
+      height:100px;
+     
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      background-color: rgb(205, 205, 205);
+      font-family: "Source Code Pro", monospace;
+      
+  }
+  
+  .contentleft{
+      background-color: #ffffff;
+      width:30%;
+      height:50%;
+   
+  
+       display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      font-family: "Source Code Pro", monospace;
+      background-color: rgb(245, 255, 255);
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 10px;
+  }
+  .scroll{
+      width: 120px;
+      height:30px;
+    border-radius: 20px;
+    background-color: rgb(80, 150, 150);
+      animation: laby 2s ease-in infinite alternate;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Source Code Pro", monospace;
+      font-size: smaller;
+      box-shadow: 12px 12px 16px 0px rgb(0 0 0 / 71%);
+      margin-top:120px;
+      padding: 2px;
+      
+     
+  }
+  @keyframes laby {
+      0%{
+  
+      
+      }100%{
+          transform: translateY(60px);
+          
+      }
+  }
+  
+  .site{
+      width: 200px;
+      border-radius: 10px;
+        margin-top: 50px;
+  }
+  
+  
+  
+  
+  
+    .navigationcontainer{
+      position:relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: rgba(255, 255, 255, 0.488);
+     width: 50%;
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+    }
+  
+  .imgupper{
+      display: flex;
+      padding:10px;
+  }
+  
+  
+    .imgretracted{
+      width: 100px;
+      height: 205px;
+      transition: 1s;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 10px 5px 13px 6px rgb(141, 141, 141)
+    }
   }

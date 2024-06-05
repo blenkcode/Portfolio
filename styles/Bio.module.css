@@ -6,6 +6,7 @@
 
 .container{
     padding-top: 50px;
+    width: 100%;
 }
 
 .photo{
@@ -33,4 +34,79 @@
     background: conic-gradient(from 0deg at 50% 50%, blue 0deg 360deg);
     -webkit-mask-image: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     mask-image: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  @media (max-width: 1500px) {
+
+    .container{
+      
+        padding-top: 180px;
+        width: 100%;
+        
+    }
+    
+    .photo{
+    width: 240px;
+        border: solid;
+       
+    margin-left: 220px;
+        
+      
+    }
+    
+    .p{
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        padding: 30px;
+        margin-left: 190px;
+        
+    }
+    
+    .list{
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        margin-left: 195px;
+    }
+  
+      
+  }
+  @media (max-width: 1300px) {
+
+    .container{
+      
+     margin-left: 30px;
+        width: 80%;
+        padding: 0px;
+        
+    }
+    
+    .photo{
+    width: 150px;
+        border: solid;
+        margin-left: 0px;
+
+        
+      
+    }
+    
+    .p{
+        font-family: "Source Code Pro", monospace;
+        color: white;
+       padding:0px;
+        margin-left: 0px;
+        font-size: 15px;
+        padding-top: 5%;
+        
+    }
+    
+    .list{
+        font-family: "Source Code Pro", monospace;
+        color: white;
+        margin-left: 11px;
+        font-size: 12px;
+        padding:0px;
+        padding-top: 5%;
+        width: 80%;
+    }
+  
+      
   }

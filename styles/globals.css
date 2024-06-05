@@ -1,10 +1,12 @@
 body {
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(63deg, #509696 30%, #305977 46%, #0f182a 100%);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+
+    
+
 }
 
-* {
-  box-sizing: border-box;
-}

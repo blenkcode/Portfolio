@@ -10,7 +10,7 @@ function Header() {
           src="logo2.png"
           alt="Description de l'image"
         />
-        <div className={styles.horizontalline}></div>
+        {/* <div className={styles.horizontalline}></div> */}
         <ul className={styles.list}>
           <li>01.About</li>
           <li>02.Experience</li>

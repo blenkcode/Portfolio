@@ -8,12 +8,15 @@ function Titre() {
   return (
     <div>
       <div className={styles.main}>
-        <img className={styles.doodlec} src="doodlee.png" />
+        {/* <img className={styles.doodlec} src="doodlee.png" />
         <img className={styles.doodled} src="doodlee.png" />
-        <img className={styles.doodlee} src="doodlee.png" />
+        <img className={styles.doodlee} src="doodlee.png" /> */}
         <div className={styles.titleContainer}>
           <h2 className={styles.subtitle}>Hi, my name is</h2>
-          <span className={styles.subtitleName}>Valentin Mor</span>
+          <span className={styles.subtitleName}>
+            Valentin Mor <span className={styles.subtitle}>I'm a : </span>
+          </span>
+
           <h1 className={styles.h1Style}>
             FRONT-END React<br></br> Developer
           </h1>

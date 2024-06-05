@@ -7,30 +7,47 @@ import Header from "./Header";
 import Footer from "./footer";
 
 function Home() {
-  return (
-    <div>
-      <main>
-        <div className={styles.mainContainer}>
-          <div className={styles.header}>
-            <Header />
-          </div>
-          <div className={styles.titre}>
-            <Titre />
-          </div>
-          <div className={styles.content}>
-            <Bio />
-          </div>
-          <div className={styles.language}>
-            {" "}
-            <Language />
-          </div>
+  const [head, setHead] = useState(false);
+  let lastScroll = 0;
 
-          <div className={styles.footer}>
-            {" "}
-            <Footer />
-          </div>
-        </div>
-      </main>
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScroll) {
+        setHead(true);
+      } else {
+        setHead(false);
+      }
+      lastScroll = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className={styles.mainContainer}>
+      <div className={head ? styles.headershow : styles.header}>
+        <Header />
+      </div>
+      <div className={styles.titre}>
+        <Titre />
+      </div>
+      <div className={styles.content}>
+        <Bio />
+      </div>
+      <div className={styles.language}>
+        {" "}
+        <Language />
+      </div>
+
+      <div className={styles.footer}>
+        {" "}
+        <Footer />
+      </div>
     </div>
   );
 }
