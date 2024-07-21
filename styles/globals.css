@@ -9,100 +9,21 @@ body {
     
 
 }
-
 @font-face {
-  font-family: 'Comfortaa';
-  src: url('/fonts/Comfortaa-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Comfortaa';
-  src: url('/fonts/Comfortaa-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Raleway */
-@font-face {
-  font-family: 'Raleway';
-  src: url('/fonts/Raleway-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway';
-  src: url('/fonts/Raleway-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Roboto */
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Space Mono */
-@font-face {
-  font-family: 'Space Mono';
-  src: url('/fonts/SpaceMono-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Space Mono';
-  src: url('/fonts/SpaceMono-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Source Code Pro */
-@font-face {
-  font-family: 'Source Code Pro';
-  src: url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Code Pro';
-  src: url('/fonts/SourceCodePro-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Inter */
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('/fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 900;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Lexend */
-@font-face {
-  font-family: 'Lexend';
-  src: url('/fonts/Lexend-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lexend';
-  src: url('/fonts/Lexend-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
 }
