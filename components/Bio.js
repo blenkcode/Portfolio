@@ -6,7 +6,7 @@ function Bio() {
     <div>
       <main>
         <div className={styles.container}>
-          <img className={styles.photo} src="vall.png" />
+          <img className={styles.photo} src="devmoor.png" />
           <p className={styles.p}>
             I create interactive interface for your web-application{" "}
           </p>

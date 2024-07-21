@@ -1,13 +1,16 @@
 import styles from "../styles/Home.module.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Language from "./Language";
 import Titre from "./Titre";
 import Bio from "./Bio";
 import Header from "./Header";
-import Footer from "./footer";
+import Works from "./Works";
+import About from "./About";
+import Acceuil from "./Acceuil";
 
 function Home() {
   const [head, setHead] = useState(false);
+  const footerRef = useRef(null);
   let lastScroll = 0;
 
   useEffect(() => {
@@ -27,26 +30,29 @@ function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const scrollToFooter = () => {
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className={styles.mainContainer}>
       <div className={head ? styles.headershow : styles.header}>
-        <Header />
-      </div>
-      <div className={styles.titre}>
-        <Titre />
-      </div>
-      <div className={styles.content}>
-        <Bio />
-      </div>
-      <div className={styles.language}>
-        {" "}
-        <Language />
+        <Header onClick={scrollToFooter} />
       </div>
 
-      <div className={styles.footer}>
+      <div className={styles.acceuil}>
+        <Acceuil></Acceuil>
+      </div>
+
+      <div ref={footerRef} className={styles.footer}>
         {" "}
-        <Footer />
+        <Works />
+      </div>
+      <div ref={footerRef} className={styles.about}>
+        {" "}
+        <About></About>
       </div>
     </div>
   );

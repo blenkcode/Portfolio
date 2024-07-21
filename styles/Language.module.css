@@ -52,6 +52,38 @@ display: flex;
   background-color: rgba(255, 255, 255, 0.85);
   -webkit-transition:  0.6s;
 }
+.scroll{
+  width: 120px;
+  height:30px;
+border-radius: 20px;
+background-color: rgb(80, 150, 150);
+  animation: laby 2s ease-in infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: smaller;
+  box-shadow: 12px 12px 16px 0px rgb(0 0 0 / 71%);
+  margin-top:120px;
+  padding: 2px;
+  
+ 
+}
+.scrollcontainer{
+  position: absolute;
+  height: 290px;
+  left:45%
+
+}
+@keyframes laby {
+  0%{
+
+  
+  }100%{
+      transform: translateY(60px);
+      
+  }
+}
 @media (max-width: 1500px) {
  
   .card{
@@ -80,7 +112,7 @@ display: flex;
   height:110%;
   width: 100%;
   z-index: 10;
-  margin-left: 130px;
+  margin-left: 120px;
   margin-top: 100px;
 
 
@@ -94,7 +126,7 @@ display: flex;
  
   .card{
     width: 30px;
-    height: 30px;
+    height: 3%;
     background-color: rgba(137, 135, 135, 0.907);
     margin: 5px;
     border-radius: 20px;

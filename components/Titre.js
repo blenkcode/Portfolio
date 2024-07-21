@@ -14,11 +14,11 @@ function Titre() {
         <div className={styles.titleContainer}>
           <h2 className={styles.subtitle}>Hi, my name is</h2>
           <span className={styles.subtitleName}>
-            Valentin Mor <span className={styles.subtitle}>I'm a : </span>
+            Valentin Mor <span className={styles.subtitle}>I'm a Junior</span>
           </span>
 
           <h1 className={styles.h1Style}>
-            FRONT-END React<br></br> Developer
+            FULL-STACK Developer<br></br>
           </h1>
           <div className={styles.lang}></div>
         </div>

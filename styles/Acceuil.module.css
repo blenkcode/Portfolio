@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono&display=swap');
+
+.main {
+
+
+
+display: grid;
+grid-template-columns: 60% 40%;
+grid-template-rows: 55% 45%;
+width: 100%;
+height: 100vh;
+  
+}
+
+
+.bioContainer{
+grid-row-start: 1 ;
+grid-row-end: 3;
+grid-column-start:2 ;
+grid-column-end: 3;
+
+padding-top: 25%;
+padding-left: 15%;
+margin-left: 10%;
+}
+
+.titleContainer{
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18%;
+    padding-top: 10%;
+
+
+}
+
+.languageContainer{
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+
+    display: flex;
+    padding-left: 18%;
+}
+
+.scroll{
+  width: 120px;
+  height:30px;
+border-radius: 20px;
+background-color: rgb(80, 150, 150);
+  animation: laby 2s ease-in infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: smaller;
+  box-shadow: 12px 12px 16px 0px rgba(0, 0, 0, 0.081);
+  margin-top:120px;
+  padding: 2px;
+  
+ 
+}
+.scrollcontainer{
+  position: absolute;
+  height: 290px;
+  left:30%;
+ top: 18%;
+
+}
+@keyframes laby {
+  0%{
+
+  
+  }100%{
+      transform: translateY(60px);
+      
+  }
+}
+
+.photo{
+
+    border: solid;
+    width: 50%;
+    margin-top: 30px;
+
+    
+  
+}
+
+.p{
+    font-family: "Source Code Pro", monospace;
+    color: white;
+margin-top: 8%;
+    width: 60%;
+    
+}
+
+.list{
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    list-style:none;
+    margin: 0px;
+    margin-top: 8%;
+    padding: 0%;
+}
+.hexagon {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(from 0deg at 50% 50%, blue 0deg 360deg);
+    -webkit-mask-image: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    mask-image: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+.h1Style{
+
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+ 
+  letter-spacing: -5px;
+  background: linear-gradient(196deg,#0F182A  ,#142c31);
+  -webkit-background-clip: text;
+  color: transparent;
+  
+  font-family: "Lexend";
+}
+
+
+
+
+.subtitle{
+  color: white;
+  font-size: 20px;
+  font-weight: 10;
+  margin: 0px;
+  padding-bottom: 30px;
+  margin-left: 0%;
+  margin-bottom: 0px;
+  font-family: "Source Code Pro", monospace;
+  margin-left: 8px;
+  padding-bottom: 10px;
+  
+
+}
+.subtitleName{
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+  margin-left: 6px;
+  font-weight: bold;
+  
+  
+
+  font-family: "Lexend", sans-serif;
+  
+}
+
+.lang{
+  display: flex;
+  margin-top: 50px;
+}
+
+
+
+
+
+  .logo{
+    width:100%
+    
+  
+  }
+
+  .logocss{
+    width:79%;
+    
+    margin-left: 6px;
+  
+  }
+
+.cards1{
+  display: flex;
+}
+.cards2{
+  display: flex;
+}
+
+  .card{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(137, 135, 135, 0.907);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-transition:  0.5s;
+   
+  
+  }
+:hover.card{
+
+  width: 80px;
+  height:80px;
+  transition: all 1s ease;
+  margin: 25px;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition:  0.6s;
+}
+.scroll{
+  width: 120px;
+  height:30px;
+border-radius: 20px;
+background-color: rgb(80, 150, 150);
+  animation: laby 2s ease-in infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: smaller;
+  box-shadow: 12px 12px 16px 0px rgb(0 0 0 / 71%);
+  margin-top:120px;
+  padding: 2px;
+  
+ 
+}
+
+@keyframes laby {
+  0%{
+
+  
+  }100%{
+      transform: translateY(60px);
+      
+  }
+}
+@media (max-width: 1500px) {
+
+    .titleContainer{
+        width: 60%;
+        height: 400px;
+        position: absolute;
+        opacity: 1;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 120px;
+      
+        
+         
+        }
+        .h1Style{
+    
+          font-size: 70px;
+          font-weight: bold;
+          text-align: left;
+          padding: 0px;
+          margin: 0px;
+         
+          letter-spacing: -5px;
+          background: linear-gradient(196deg,#0F182A  ,#142c31);
+          -webkit-background-clip: text;
+          color: transparent;
+          
+          font-family: "Lexend";
+        }
+ 
+  .card{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(137, 135, 135, 0.907);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-transition:  0.5s;
+   
+  
+  }
+:hover.card{
+  width: 80px;
+  height:80px;
+  transition: all 1s ease;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition:  0.6s;
+}
+.main {
+   
+   
+  
+  height:110%;
+  width: 100%;
+  z-index: 10;
+  margin-left: 120px;
+  margin-top: 100px;
+
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.container{
+      
+    padding-top: 180px;
+    width: 100%;
+    
+}
+
+.photo{
+width: 240px;
+    border: solid;
+   
+margin-left: 220px;
+    
+  
+}
+
+.p{
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    padding: 30px;
+    margin-left: 190px;
+    
+}
+
+.list{
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    margin-left: 195px;
+}
+
+}
+@media (max-width: 1300px) {
+    .titleContainer{
+        width: 100%;
+        height: 180px;
+        
+        opacity: 1;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 180px;
+      
+        
+         
+        }
+        .h1Style{
+    
+          font-size: 45px;
+          font-weight: bold;
+          text-align: left;
+          padding: 0px;
+          margin: 0px;
+         margin-left: 30px;
+          letter-spacing: -5px;
+          background: linear-gradient(196deg,#0F182A  ,#142c31);
+          -webkit-background-clip: text;
+          color: transparent;
+          
+          font-family: "Lexend";
+        }
+        
+    .subtitle{
+      color: white;
+      font-size: 20px;
+      font-weight: 10;
+      margin: 0px;
+      padding-bottom: 30px;
+    
+      margin-bottom: 0px;
+      font-family: "Source Code Pro", monospace;
+      margin-left: 30px;
+      padding-bottom: 10px;
+      
+    
+    }
+    .subtitleName{
+      color: white;
+      font-size: 30px;
+      font-weight: 300;
+      margin-left: 30px;
+      font-weight: bold;
+      
+      
+    
+      font-family: "Lexend", sans-serif;
+      
+    }
+    
+    .lang{
+      display: flex;
+      margin-top: 50px;
+    }
+ 
+  .card{
+    width: 30px;
+    height: 3%;
+    background-color: rgba(137, 135, 135, 0.907);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-transition:  0.5s;
+   
+  
+  }
+:hover.card{
+  width: 40px;
+  height:40px;
+  transition: all 1s ease;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-transition:  0.6s;
+}
+.main {
+   
+   
+  
+  height:100%;
+  width: 100%;
+  z-index: 10;
+  margin:0px;
+ 
+
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+.container{
+      
+    margin-left: 30px;
+       width: 80%;
+       padding: 0px;
+       
+   }
+   
+   .photo{
+   width: 150px;
+       border: solid;
+       margin-left: 0px;
+
+       
+     
+   }
+   
+   .p{
+       font-family: "Source Code Pro", monospace;
+       color: white;
+      padding:0px;
+       margin-left: 0px;
+       font-size: 15px;
+       padding-top: 5%;
+       
+   }
+   
+   .list{
+       font-family: "Source Code Pro", monospace;
+       color: white;
+       margin-left: 11px;
+       font-size: 12px;
+       padding:0px;
+       padding-top: 5%;
+       width: 80%;
+   }
+ 
+}
+
