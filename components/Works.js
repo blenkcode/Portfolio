@@ -23,33 +23,33 @@ const customStyles = {
 
 function Works() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const videoRef = useRef(null);
+  // const videoRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          videoRef.current.play();
-        } else {
-          videoRef.current.pause();
-        }
-      },
-      {
-        threshold: 0.5, // Vidéo commence à jouer lorsque 50% de l'élément est visible
-      }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (entry.isIntersecting) {
+  //         videoRef.current.play();
+  //       } else {
+  //         videoRef.current.pause();
+  //       }
+  //     },
+  //     {
+  //       threshold: 0.5, // Vidéo commence à jouer lorsque 50% de l'élément est visible
+  //     }
+  //   );
 
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
+  //   if (videoRef.current) {
+  //     observer.observe(videoRef.current);
+  //   }
 
-    return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
-      }
-    };
-  }, []);
-  const myDivRef = useRef(null);
+  //   return () => {
+  //     if (videoRef.current) {
+  //       observer.unobserve(videoRef.current);
+  //     }
+  //   };
+  // }, []);
+  // const myDivRef = useRef(null);
 
   const handleClick = () => {
     if (myDivRef.current) {
@@ -68,18 +68,7 @@ function Works() {
                   {" "}
                   <div className={styles.iphoneContainer}>
                     <img className={styles.iphone} src="/apple.png"></img>
-                    <div className={styles.videoContainer}>
-                      <video
-                        className={styles.video}
-                        width="100%"
-                        height="400px"
-                        controls
-                        ref={videoRef}
-                      >
-                        <source src={"/carbydemo2.mp4"} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                    <div className={styles.videoContainer}></div>
                   </div>
                   <img
                     className={styles.imgretracted}
