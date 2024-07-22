@@ -3,10 +3,10 @@
 .mainContainer {
  
   display: grid;
-  grid-template-columns: 50% 1fr 1fr 1fr ;
+  grid-template-columns: 50% 1fr 1fr 1fr 1fr ;
   grid-template-rows: 110px 470px 120px 1fr 1;
 position: absolute;
-  background-image: linear-gradient(63deg, #509696 30%, #427ba4 46%, #0f182a 100%); /* Adjusted to take the full viewport height */
+background-image: linear-gradient(63deg,rgb(15, 24, 42) 45%, #427ba4 46%, #0f182a 100%); /* Adjusted to take the full viewport height */
 }
 .header {
   
@@ -63,7 +63,10 @@ z-index: 10;
 
   z-index: 1;
 }
-
+.contact{
+  grid-row: 6 / 7;
+  grid-column: 1 / 6;
+}
 
 @media (max-width: 1500px) {
   .mainContainer {

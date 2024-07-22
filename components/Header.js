@@ -1,7 +1,12 @@
 import styles from "../styles/Header.module.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function Header({ onClick }) {
+function Header({
+  scrollToAcceuil,
+  scrollToWorks,
+  scrollToAbout,
+  scrollToContact,
+}) {
   return (
     <div>
       <div className={styles.container}>
@@ -10,14 +15,19 @@ function Header({ onClick }) {
           src="logo2.png"
           alt="Description de l'image"
         />
-        {/* <div className={styles.horizontalline}></div> */}
         <ul className={styles.list}>
-          <li>01.About</li>
-          <li>02.Experience</li>
-          <li onClick={onClick} style={{ cursor: "pointer" }}>
-            03.Work
+          <li onClick={scrollToAcceuil} style={{ cursor: "pointer" }}>
+            01. Acceuil
           </li>
-          <li>04.Contact</li>
+          <li onClick={scrollToAbout} style={{ cursor: "pointer" }}>
+            02. À propos
+          </li>
+          <li onClick={scrollToWorks} style={{ cursor: "pointer" }}>
+            03. Portfolio
+          </li>
+          <li onClick={scrollToContact} style={{ cursor: "pointer" }}>
+            04. Contact
+          </li>
         </ul>
       </div>
     </div>

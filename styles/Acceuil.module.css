@@ -5,13 +5,14 @@
 
 .main {
 
-
+position: relative;
 
 display: grid;
 grid-template-columns: 60% 40%;
 grid-template-rows: 55% 45%;
 width: 100%;
 height: 100vh;
+background-image: linear-gradient(63deg,rgb(15, 24, 42) -10%, #427ba4 46%, #0f182afa 100%);
   
 }
 
@@ -21,7 +22,7 @@ grid-row-start: 1 ;
 grid-row-end: 3;
 grid-column-start:2 ;
 grid-column-end: 3;
-
+position: relative;
 padding-top: 25%;
 padding-left: 15%;
 margin-left: 10%;
@@ -74,8 +75,11 @@ background-color: rgb(80, 150, 150);
   position: absolute;
   height: 290px;
   left:30%;
- top: 18%;
+ top: 70%;
 
+}
+.imgcontainer{
+  position: relative;
 }
 @keyframes laby {
   0%{
@@ -90,13 +94,25 @@ background-color: rgb(80, 150, 150);
 .photo{
 
     border: solid;
-    width: 50%;
-    margin-top: 30px;
+    width: 60%;
 
-    
+    margin-top: 10px;
+    z-index: 1;
+    border-radius: 5px;
   
 }
+.poly{
 
+  width: 62%;
+
+  height: 100%;
+ background-color: #00000024;
+  position: absolute;
+  top: 0%;
+  transform: translateX(5px) rotate(12deg);
+  border-radius: 5px;
+  z-index: 0;
+}
 .p{
     font-family: "Source Code Pro", monospace;
     color: white;
@@ -206,15 +222,32 @@ margin-top: 8%;
    
   
   }
-:hover.card{
 
-  width: 80px;
-  height:80px;
-  transition: all 1s ease;
-  margin: 25px;
-  background-color: rgba(255, 255, 255, 0.85);
-  -webkit-transition:  0.6s;
-}
+  .cardcontainer{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+   
+  }
+  /* .cardcontainer:hover{
+    width: 110px;
+    height: 120px;
+    transition: all 1s ease;
+    -webkit-transition:  0.6s;
+  } */
+ 
+ 
+
+  .cardcontainer:hover .card{
+    width: 80px;
+    height:80px;
+    transition: all 1s ease;
+   transform: translateY(30px) translateX(-10px);
+   
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-transition:  0.6s;
+  }
+
 .scroll{
   width: 120px;
   height:30px;
@@ -240,6 +273,138 @@ background-color: rgb(80, 150, 150);
   }100%{
       transform: translateY(60px);
       
+  }
+}
+.doodled{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+
+  border: solid 2px rgb(15, 24, 42);
+  top: 25%;
+  left: 49%;
+  animation: rotateCube 7s infinite linear;
+  transition: 2.5s ease-in-out;
+
+}
+.doodlea{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  border: solid 2px rgb(15, 24, 42);
+  top: 28%;
+  left: 55%;
+  animation: rotateCube 7s infinite linear;
+  transition: ease-out;
+  animation-delay: 0.5s;
+  transition: 2.5s ease-in-out;
+
+}
+
+.doodleb{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  border: solid 2px rgb(15, 24, 42);
+  top: 33%;
+  left: 59.5%;
+  animation: rotateCube 7s infinite linear;
+  animation-delay: 1s;
+  transition: 2.5s ease-in-out;
+
+}
+.doodlec{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  border: solid 2px rgb(15, 24, 42);
+  top: 40%;
+  left: 61.5%;
+  animation: rotateCube 7s infinite linear;
+  animation-delay: 1.5s;
+  transition: 2.5s ease-in-out;
+
+}
+
+.doodlee{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+
+  border: solid 2px rgb(15, 24, 42);
+  top: 46%;
+  left: 62%;
+  animation: rotateCube 7s infinite linear;
+  animation-delay: 2s;
+  transition: 1.5s ease-in-out;
+
+}
+.doodlea:hover{
+  width: 35px;
+  height: 35px;
+  transition: 0.2s ease-in-out;
+
+  border: solid 2px rgba(255, 255, 255, 0.557);
+}
+.doodleb:hover{
+  width: 25px;
+  height: 25px;
+  transition: 0.2s ease-in-out;
+
+  border: solid 2px rgba(255, 255, 255, 0.557);
+}
+.doodlec:hover{
+  width: 15px;
+  height: 15px;
+  transition: 0.2s ease-in-out;
+
+  border: solid 2px rgba(255, 255, 255, 0.557);
+}
+.doodled:hover{
+  width: 45px;
+  height: 45px;
+  transition: 0.2s ease-in-out;
+ 
+  border: solid 2px rgba(255, 255, 255, 0.557);
+}
+.doodlee:hover{
+  width: 5px;
+  height: 5px;
+  transition: 0.2s ease-in-out;
+ 
+  border: solid 2px rgba(255, 255, 255, 0.997);
+}
+@keyframes rotateCube {
+  0% {
+    transform: rotateZ(0deg);
+  border-radius: 0px;
+  background-color: rgba(15, 24, 42, 0);
+  
+  }
+
+  20% {
+    transform: rotateZ(90deg);
+    border-radius: 30px;
+    background-color: rgba(15, 24, 42, 0.79);
+
+  
+  
+  }
+  40% {
+    transform: rotateZ(180deg);
+    border-radius: 30px;
+    background-color: rgb(15, 24, 42);
+  
+  
+  }
+  100% {
+    transform: rotateZ(0);
+    
+    border-radius: 0px;
+  
   }
 }
 @media (max-width: 1500px) {

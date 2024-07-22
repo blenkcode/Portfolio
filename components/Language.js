@@ -3,14 +3,17 @@ import React, { useState, useEffect, useRef } from "react";
 
 function Language() {
   return (
-    <div>
+    <div className={styles.mainE}>
       <div className={styles.main}>
-        <div className={styles.card}>
-          <img
-            src="html.png"
-            alt="Description de l'image"
-            className={styles.logo}
-          />
+        <div className={styles.cardcontainer}>
+          <div className={styles.card}>
+            <img
+              src="html.png"
+              alt="Description de l'image"
+              className={styles.logo}
+            />
+          </div>
+          <p>Contenu de la cardcontainer</p>
         </div>
         <div className={styles.card}>
           <img

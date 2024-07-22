@@ -1,0 +1,47 @@
+.image{
+ 
+}
+
+.carousel{
+    width: 100%;
+    position: relative;
+}
+
+.thumb{
+    display: none;
+}
+
+.indicator {
+  display: inline-block;
+
+  width: 10px;
+  height: 10px;
+  margin: 0 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+
+}
+.indicator2 {
+  display: inline-block;
+
+  width: 10px;
+  height: 10px;
+  margin: 0 9px;
+  background-color: #00000064;
+  border-radius: 50%;
+  cursor: pointer;
+
+
+}
+
+
+.carouselContainer{
+width: 55%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+

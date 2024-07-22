@@ -3,45 +3,56 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Card from "./Card";
 
 function About() {
   return (
     <div className={styles.main}>
-      <h4 className={styles.titlework}>01. About</h4>
+      <h4 className={styles.titlework}></h4>
 
       <div className={styles.contentContainer}>
         <div className={styles.photoContainer}>
-          <img className={styles.photo} src="./abouttouched.png"></img>
+          <div className={styles.contentimg}>
+            {" "}
+            <img className={styles.photo} src="./colors.png"></img>
+          </div>
         </div>
 
         <div className={styles.pContainer}>
+          <div className={styles.titre}>A PROPOS DE MOI </div>
           <div className={styles.p}>
-            👋 Je suis un Montpellierain de 28 ans à la recherche de mon premier
-            poste en tant que développeur FullStack Junior! <br></br> <br></br>
-            Fort d'une carrière de 6 ans dans l'industrie musicale où
-            l'apprentissage des connaissances techniques et l'innonovation ont
-            su me captiver et me donner soif d'imaginer , concevoir puis faire
-            prendre vie à des projets, ce sont ces liens là que j'ai pu
-            retrouver dans le développement web. <br></br> <br></br>
-            🎓 Après plusieurs mois en autoditacte j'ai décidé de me former avec
-            des professionels à La Capsule et ainsi obtenir le Titre RNCP
-            "Concepteur / Developpeur d'application Web".<br></br> <br></br>{" "}
-            Plus que jamais passioné par ce secteur, j'ai hâte de commencer ce
-            nouveau chapitre professionel.
+            👋 Je suis un développeur FullStack Junior de 28 ans, basé à{" "}
+            <b>Montpellier</b>, à la recherche de mon premier poste dans le Web!
+            <br></br>
+            <br></br>
+            Fort d'une carrière de six ans dans <b>l'industrie musicale</b>, où
+            j'ai acquis des compétences <b>techniques</b> et développé un esprit{" "}
+            <b>d'innovation</b>, je me suis passionné pour le développement web,
+            retrouvant des similitudes dans <b>l'imagination</b>,{" "}
+            <b>la conception</b> et la <b>réalisation</b> de projets.
+            <br></br>
+            <br></br> 🎓 Après plusieurs mois d'apprentissage en autodidacte,
+            j'ai décidé de me <b>former</b> professionnellement à{" "}
+            <b>La Capsule</b>, où j'ai obtenu le titre RNCP Concepteur
+            Développeur d'Applications Web & Mobile
           </div>
           <div className={styles.links}>
             <a href="https://github.com/blenkcode" className={styles.git}>
-              Github <FontAwesomeIcon icon={faGithub} />
+              Github{" "}
+              <FontAwesomeIcon className={styles.icons} icon={faGithub} />
             </a>
             <a
               href="https://www.linkedin.com/in/valentin-mor-a03174114/"
               className={styles.git}
             >
-              LinkedIn <FontAwesomeIcon icon={faLinkedin} />
+              LinkedIn{" "}
+              <FontAwesomeIcon className={styles.icons} icon={faLinkedin} />
             </a>
-
+            <a href="https://www.lacapsule.academy/" className={styles.git}>
+              La Capsule <img className={styles.capsule} src="./capsule.png" />
+            </a>
             <div className={styles.git}>
-              Resume <FontAwesomeIcon icon={faFile} />
+              CV <FontAwesomeIcon className={styles.icons} icon={faFile} />
             </div>
           </div>
         </div>

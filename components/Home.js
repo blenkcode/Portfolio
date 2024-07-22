@@ -7,20 +7,25 @@ import Header from "./Header";
 import Works from "./Works";
 import About from "./About";
 import Acceuil from "./Acceuil";
+import Contact from "./Contact";
 
 function Home() {
   const [head, setHead] = useState(false);
-  const footerRef = useRef(null);
-  let lastScroll = 0;
+  const lastScroll = useRef(0);
+
+  const acceuilRef = useRef(null);
+  const worksRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScroll) {
+      if (window.scrollY > lastScroll.current) {
         setHead(true);
       } else {
         setHead(false);
       }
-      lastScroll = window.scrollY;
+      lastScroll.current = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,29 +35,35 @@ function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const scrollToFooter = () => {
-    if (footerRef.current) {
-      footerRef.current.scrollIntoView({ behavior: "smooth" });
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <div className={styles.mainContainer}>
       <div className={head ? styles.headershow : styles.header}>
-        <Header onClick={scrollToFooter} />
+        <Header
+          scrollToAcceuil={() => scrollToSection(acceuilRef)}
+          scrollToWorks={() => scrollToSection(worksRef)}
+          scrollToAbout={() => scrollToSection(aboutRef)}
+          scrollToContact={() => scrollToSection(contactRef)}
+        />
       </div>
 
-      <div className={styles.acceuil}>
-        <Acceuil></Acceuil>
+      <div ref={acceuilRef} className={styles.acceuil}>
+        <Acceuil />
       </div>
-
-      <div ref={footerRef} className={styles.footer}>
-        {" "}
+      <div ref={worksRef} className={styles.footer}>
         <Works />
       </div>
-      <div ref={footerRef} className={styles.about}>
-        {" "}
-        <About></About>
+      <div ref={aboutRef} className={styles.about}>
+        <About />
+      </div>
+      <div ref={contactRef} className={styles.contact}>
+        <Contact />
       </div>
     </div>
   );

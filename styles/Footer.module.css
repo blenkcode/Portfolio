@@ -16,8 +16,8 @@
 
 .titlework{
     
-    background-color: #0f182a9a;
-    height: 80px;
+    background-color: #0f182aee;
+    height: 40px;
     color: white;
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 .mywork{
     background-image: linear-gradient(63deg, #509696 5%, #305977 26%, #0f182ac0 100%);
