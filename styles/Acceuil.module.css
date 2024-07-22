@@ -117,7 +117,8 @@ background-color: rgb(80, 150, 150);
     font-family: "Source Code Pro", monospace;
     color: white;
 margin-top: 8%;
-    width: 60%;
+font-size: 18px;
+    width: 65%;
     
 }
 
@@ -236,7 +237,14 @@ margin-top: 8%;
     -webkit-transition:  0.6s;
   } */
  
- 
+ .li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+ }
+ .iconBio{
+  margin-right: 15px;
+ }
 
   .cardcontainer:hover .card{
     width: 80px;

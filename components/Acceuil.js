@@ -1,5 +1,13 @@
 import styles from "../styles/Acceuil.module.css";
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLaptop,
+  faServer,
+  faDatabase,
+  faScrewdriverWrench,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Acceuil() {
   // Déclaration de la fonction ColorCycleGradient à l'extérieur de Home pour éviter la redéfinition
@@ -35,11 +43,26 @@ function Acceuil() {
           I create interactive interface for your web-application{" "}
         </p>
         <ul className={styles.list}>
-          <li>Creative FRONT-END developement</li>
-          <li>UX / UI Design</li>
-          <li>BACK-END Architectures</li>
-          <li>Data-Base management</li>
-          <li>CRUD Operation</li>
+          <li className={styles.li}>
+            <FontAwesomeIcon icon={faLaptop} className={styles.iconBio} />{" "}
+            Développement Front-End & Architectures Back-End
+          </li>
+
+          <li className={styles.li}>
+            <FontAwesomeIcon icon={faDatabase} className={styles.iconBio} />{" "}
+            Gestion de base de données{" "}
+          </li>
+          <li className={styles.li}>
+            <FontAwesomeIcon
+              icon={faScrewdriverWrench}
+              className={styles.iconBio}
+            />{" "}
+            Maintenance
+          </li>
+          <li className={styles.li}>
+            <FontAwesomeIcon icon={faUserGroup} className={styles.iconBio} />{" "}
+            Méthode Agile
+          </li>
         </ul>
       </div>
 
