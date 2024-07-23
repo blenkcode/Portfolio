@@ -68,3 +68,79 @@
     border-radius: 15px;
     bottom:-25.5%;
 }
+
+@media (max-width: 1300px) {
+    .form{
+        background-color: white;
+        width:70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 11px 2px 20px 12px #00000057;
+        position: relative;
+        margin-bottom: 5%;
+        margin-top: 150px;
+        
+    }
+    
+    .inputContainer{
+        display: flex;
+    }
+    
+    .input{
+        border: none;
+        padding: 12px;
+        width: 130px;
+        margin: 10px;
+        height: 12px;
+        border-radius: 20px;
+        font-size: 14px;
+       
+        color: white;
+        border-bottom: solid 1px ;
+        border-left: solid 1px ;
+        background-color: rgba(154, 154, 154, 0.219);
+        color:#000000; ;
+      border: solid  #2e445c95 2px;
+    }
+    
+    .textarea{
+        border: none;
+        padding: 12px;
+        width: 310px;
+        margin: 10px;
+        height: 135px;
+        font-family:sans-serif;
+        border-radius: 20px;
+        font-size: 14px;
+        background-color: #46266084;
+        color: white;
+        border-bottom: solid 1px ;
+        border-left: solid 1px ;
+        background-color: rgba(154, 154, 154, 0.219);
+        color:#00000095 ; ;
+      border: solid #2e445c95  2px;
+    
+    }
+    
+    .titre{
+        font-family: "Lexend";
+        position: absolute;
+        top:-12.5%;
+        left: 62%;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .success{
+        position: absolute;
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        bottom:-25.5%;
+    }
+}

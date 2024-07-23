@@ -51,7 +51,14 @@ margin-left: 10%;
     grid-column-end: 2;
 
     display: flex;
+    flex-direction: row;
     padding-left: 18%;
+}
+.upper{
+  display: flex;
+}
+.lower{
+  display: flex;
 }
 
 .scroll{
@@ -242,6 +249,13 @@ font-size: 18px;
     margin: 5px;
    
   }
+
+  .github{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+   
+  }
   /* .cardcontainer:hover{
     width: 110px;
     height: 120px;
@@ -260,6 +274,15 @@ font-size: 18px;
  }
 
   .cardcontainer:hover .card{
+    width: 80px;
+    height:80px;
+    transition: all 1s ease;
+   transform: translateY(30px) translateX(-10px);
+   
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-transition:  0.6s;
+  }
+  .github:hover .card{
     width: 80px;
     height:80px;
     transition: all 1s ease;
@@ -479,6 +502,13 @@ background-color: rgb(80, 150, 150);
       margin: 4px;
      
     }
+
+    .github{
+
+      width: 90px;
+      height: 90px;
+      margin: 4px;
+    }
     .bioContainer{
       grid-row-start: 1 ;
       grid-row-end: 3;
@@ -546,6 +576,12 @@ background-color: rgb(80, 150, 150);
     height: 90px;
     margin: 3px;
    
+  }
+
+  .github{
+    width: 90px;
+    height: 90px;
+    margin: 3px;
   }
   .bioContainer{
     grid-row-start: 1 ;
@@ -656,3 +692,237 @@ background-color: rgb(80, 150, 150);
   
   }
 }
+
+@media (max-width: 1300px) {
+  .main {
+
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 700px 300px;
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(63deg,rgb(15, 24, 42) -10%, #427ba4 46%, #0f182afa 100%);
+      
+    }
+    
+    
+    .bioContainer{
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    position: relative;
+    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    padding-top: 5%;
+    padding-left: 0%;
+    margin-left: 0%;
+  
+    }
+    
+    .titleContainer{
+        grid-row-start: 1 ;
+        grid-row-end: 2;
+        grid-column-start:1 ;
+        grid-column-end: 3;
+     
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 13%;
+        padding-top: 0%;
+    
+    
+    
+    }
+    
+    .languageContainer{
+        grid-row-start: 3 ;
+        grid-row-end: 4;
+        grid-column-start:1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+align-items: center;
+justify-content: center;
+        padding-left: 0%;
+
+      
+   
+    }
+    .scroll{
+ display: none;
+      
+     
+    }
+
+    .imgcontainer{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .subtitle{
+      color: white;
+      font-size: 17px;
+      font-weight: 10;
+      margin: 0px;
+      padding-bottom: 30px;
+      margin-left: 0%;
+      margin-bottom: 0px;
+      font-family: "Source Code Pro", monospace;
+      margin-left: 8px;
+      padding-bottom: 10px;
+      
+    
+    }
+    .subtitleName{
+      color: white;
+      font-size: 25px;
+      font-weight: 300;
+      margin-left: 6px;
+      font-weight: bold;
+      
+      
+    
+      font-family: "Lexend", sans-serif;
+      
+    }
+  
+    .h1Style{
+  
+      font-size: 50px;
+      font-weight: bold;
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+     
+      letter-spacing: -5px;
+      background: linear-gradient(196deg,#0F182A  ,#142c31);
+      -webkit-background-clip: text;
+      color: transparent;
+      
+      font-family: "Lexend";
+    }
+    .p{
+      font-family: "Source Code Pro", monospace;
+      color: white;
+  margin-top: 12%;
+  font-size: 17px;
+  font-weight: 300;
+      width: 80%;
+      
+  }
+  
+  .list{
+      font-family: "Source Code Pro", monospace;
+      color: white;
+      list-style:none;
+      margin: 0px;
+      margin-top: 15%;
+      padding: 0%;
+      width: 80%;
+  }
+  .cardcontainer{
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+   
+  }
+  /* .cardcontainer:hover{
+    width: 110px;
+    height: 120px;
+    transition: all 1s ease;
+    -webkit-transition:  0.6s;
+  } */
+ 
+.github{
+  display:none
+}
+
+  .cardcontainer:hover .card{
+    width: 80px;
+    height:80px;
+    transition: all 1s ease;
+   transform: translateY(30px) translateX(-10px);
+   
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-transition:  0.6s;
+  }
+
+  .doodled{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 20%;
+    left: 74%;
+    animation: rotateCube 7s infinite linear;
+    transition: 2.5s ease-in-out;
+  
+  }
+  .doodlea{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 17%;
+    left: 82%;
+    animation: rotateCube 7s infinite linear;
+    transition: ease-out;
+    animation-delay: 0.5s;
+    transition: 2.5s ease-in-out;
+  
+  }
+  
+  .doodleb{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 14%;
+    left: 85%;
+    animation: rotateCube 7s infinite linear;
+    animation-delay: 1s;
+    transition: 2.5s ease-in-out;
+  
+  }
+  .doodlec{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 12%;
+    left: 85%;
+    animation: rotateCube 7s infinite linear;
+    animation-delay: 1.5s;
+    transition: 2.5s ease-in-out;
+  
+  }
+  
+  .doodlee{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+  
+    border: solid 2px rgb(15, 24, 42);
+    top: 46%;
+    left: 62%;
+    animation: rotateCube 7s infinite linear;
+    animation-delay: 2s;
+    transition: 1.5s ease-in-out;
+  
+  }
+  
+}
+

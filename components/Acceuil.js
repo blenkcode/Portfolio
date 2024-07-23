@@ -67,85 +67,90 @@ function Acceuil() {
       </div>
 
       <div className={styles.languageContainer}>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="css.png"
-              alt="Description de l'image"
-              className={styles.logocss}
-            />
+        <div className={styles.upper}>
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="css.png"
+                alt="Description de l'image"
+                className={styles.logocss}
+              />
+            </div>
+          </div>
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="js.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
+          </div>
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="react.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
+          </div>
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="next.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
           </div>
         </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="js.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
+        <div className={styles.lower}>
+          {" "}
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="redux.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="react.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="node.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="next.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="expr.png"
+                alt="Description de l'image"
+                className={styles.logoex}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="redux.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
+          <div className={styles.cardcontainer}>
+            <div className={styles.card}>
+              <img
+                src="m.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="node.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
-          </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="expr.png"
-              alt="Description de l'image"
-              className={styles.logoex}
-            />
-          </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="m.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
-          </div>
-        </div>
-        <div className={styles.cardcontainer}>
-          <div className={styles.card}>
-            <img
-              src="git.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
+          <div className={styles.github}>
+            <div className={styles.card}>
+              <img
+                src="git.png"
+                alt="Description de l'image"
+                className={styles.logo}
+              />
+            </div>
           </div>
         </div>
       </div>

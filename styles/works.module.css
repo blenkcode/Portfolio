@@ -81,6 +81,7 @@
     animation-range-end:600px;
     margin-bottom: 150px;
     border-radius: 30px;
+    box-shadow: 11px 2px 20px 12px #00000057;
 }
 
 
@@ -99,6 +100,7 @@
     animation-range-end:600px;
     margin-bottom: 150px;
     border-radius: 30px;
+    box-shadow: 11px 2px 20px 12px #00000057;
 }
 
 
@@ -170,4 +172,108 @@ padding-top: 80px;}
         font-family: "Lexend";
         font-size: 35px;
         color: white;
+    }
+
+    @media (max-width: 1300px) {
+        .content{
+            background-color: white;
+            width: 80%;
+            height: 500px;
+            display: flex;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fade-in linear;
+            animation-timeline: view();
+            animation-range-start:-50px;
+            animation-range-end:600px;
+            margin-bottom: 150px;
+            border-radius: 30px;
+            box-shadow: 11px 2px 20px 12px #00000057;
+        }
+        
+    .text{
+        width: 80%;
+        height: 100%;
+        padding-right: 5%;
+        font-family: "Source Code Pro", monospace;
+        font-size: 10px;
+        padding-top: 5%;
+    }
+    .textheaf{
+        width: 80%;
+        height: 100%;
+        padding-left: 5%;
+        font-family: "Source Code Pro", monospace;
+        font-size: 10px;
+    }
+
+    .titleproject{
+        font-family: "Lexend";
+        font-size: 30px;
+        margin: 0px;
+    }
+
+
+  
+      .imgretracted{
+      
+      
+        border-radius: 10px;
+        margin: 10px;
+        width: 80px;
+       
+      }
+
+      .imgupper{
+        display: flex;
+        padding:10px;
+      
+    }
+    .title{
+        position: absolute;
+        top:-15%;
+        left:60%;
+        font-family: "Lexend";
+        font-size: 25px;
+        color: white;
+      
+    }
+
+    .titleheaf{
+        position: absolute;
+        top:-15%;
+        left:6%;
+        font-family: "Lexend";
+        font-size: 25px;
+        color: white;
+    }
+    .contentcarby{
+        background-color: white;
+        width: 80%;
+        height: 500px;
+        display: flex;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        animation: fade-in linear;
+        animation-timeline: view();
+        animation-range-start:-50px;
+        animation-range-end:600px;
+        margin-bottom: 150px;
+        border-radius: 30px;
+        box-shadow: 11px 2px 20px 12px #00000057;
+    }
+    
+    
+    .mywork{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    padding-top: 80px;}
     }

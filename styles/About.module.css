@@ -185,3 +185,114 @@ perspective: 1000px;
     
     
 }
+
+@media (max-width: 1300px) {
+    .main {
+        background-image:  url("../public/fond\ cv.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1100px;
+    }
+    
+    .contentContainer{
+    
+        padding-right: 0%;
+        margin-top: 0%;
+        display: flex;
+        position: relative;
+        height: 700px;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .pContainer{
+        background-color:#427AA4;
+        width: 300px;
+        height: 480px;
+        border-radius: 2%;
+        box-shadow: 11px 2px 20px 12px #00000057;
+        
+    }
+    
+    
+    
+    .p{
+        width: 85%;
+        font-family: "Source Code Pro", monospace;
+        padding: 8%
+        
+        
+        ;
+        font-size: 13px;
+    }
+    .titre{
+        font-family: "Lexend";
+        position: absolute;
+        top:13%;
+        left: 29%;
+        font-size: 25px;
+        color: white;
+    }
+    .photoContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    margin-top: 8%;
+    bottom: -24%;
+
+    perspective: 1000px;
+    }
+    .contentimg{
+        width: 80%;
+        /* transform: rotateX(30deg) rotateY(30deg); */
+        transition: all 0.15s ease-out;
+    }
+    .photo{
+        width: 100%;
+    
+        border-radius: 40%;
+        border-top-left-radius: 60%;
+        margin-bottom: 8%;
+        border: solid 3px black;
+        box-shadow: 11px 2px 20px 12px #00000057;
+    }
+    .links{
+
+        display: flex;
+      
+     margin-top: 0%;
+     padding-bottom: 6%;
+     margin-left: 1%;
+       
+        
+    }
+    .git{
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: fit-content;
+        padding: 5px;
+        padding-left: 13px;
+        padding-right: 13spx;
+        margin-left: 10px;
+        font-size: 8px;
+        color: white;
+        cursor: pointer;
+        height: 10px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .capsule{
+        border-radius: 50%;
+        width: 14px;
+        margin-left: 8px;
+    }
+   
+}

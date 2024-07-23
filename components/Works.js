@@ -61,7 +61,7 @@ function Works() {
               <u>Technologies utilisées :</u> Javascript, React, Next.js, Redux,
               MongoDB, CSS, Figma, Express, Socket.IO, Node.js.
             </p>
-            <a href="">Visitez</a>
+            <a href="https://mind-scape-front-end.vercel.app/">Visitez</a>
           </div>
           <Slider className={styles.carousel}></Slider>
         </div>
@@ -86,7 +86,7 @@ function Works() {
               <u>Technologies utilisées :</u> Javascript, React, Chart.js
               Next.js Redux, MongoDB, CSS, Figma, Express, Node.js.
             </p>
-            <a href="">Visitez</a>
+            <a href="https://heaf-front-end-qzfj.vercel.app/">Visitez</a>
           </div>
         </div>
         <div className={styles.contentcarby}>
