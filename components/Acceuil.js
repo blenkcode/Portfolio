@@ -40,7 +40,7 @@ function Acceuil() {
         </div>
 
         <p className={styles.p}>
-          I create interactive interface for your web-application{" "}
+          Je crée des interface interactive pour vos applications Web et Mobile.{" "}
         </p>
         <ul className={styles.list}>
           <li className={styles.li}>
