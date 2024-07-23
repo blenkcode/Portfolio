@@ -46,14 +46,12 @@ perspective: 1000px;
     border: solid 3px black;
     box-shadow: 11px 2px 20px 12px #00000057;
 }
-
-.main{
-   
-    background-image: url("../public/fond\ cv.png");
+.main {
+    background-image: linear-gradient(63deg, rgba(15, 24, 42, 0) -10%, #427ba47b 46%, rgb(15, 24, 42) 100%), url("../public/fond\ cv.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
-height: 1100px;
+    background-position: center;
+    height: 1100px;
 }
 
 .contentContainer{
@@ -71,8 +69,8 @@ height: 1100px;
 
 .pContainer{
     background-color:#427AA4;
-    width: 50%;
-    height: fit-content;
+    width: 800px;
+    height: 550px;
     border-radius: 2%;
     box-shadow: 11px 2px 20px 12px #00000057;
     
@@ -133,4 +131,57 @@ height: 1100px;
 .icons{
     margin-left: 8px;
 
+}
+
+@media (max-width: 1813px) {
+    .titre{
+        font-family: "Lexend";
+        position: absolute;
+        top:5.5%;
+        left: 62%;
+        font-size: 50px;
+        color: white;
+    }
+    
+}
+
+@media (max-width: 1609px) {
+    .titre{
+        font-family: "Lexend";
+        position: absolute;
+        top:5.5%;
+        left: 59%;
+        font-size: 50px;
+        color: white;
+    }
+    
+}
+@media (max-width: 1457px) {
+    .titre{
+        font-family: "Lexend";
+        position: absolute;
+        top:13.9%;
+        left: 61%;
+        font-size: 40px;
+        color: white;
+    }
+    .pContainer{
+        background-color:#427AA4;
+        width: 700px;
+        height: 450px;
+        border-radius: 2%;
+        box-shadow: 11px 2px 20px 12px #00000057;
+        
+    }
+    .p{
+        width: 85%;
+        font-family: "Source Code Pro", monospace;
+        padding: 8%
+        
+        
+        ;
+        font-size: 14px;
+    }
+    
+    
 }

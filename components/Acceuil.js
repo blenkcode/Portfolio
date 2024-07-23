@@ -35,7 +35,7 @@ function Acceuil() {
       <div className={styles.bioContainer}>
         <div className={styles.imgcontainer}>
           {" "}
-          <img className={styles.photo} src="devmoor.png"></img>
+          <img className={styles.photo} src="photopr.png"></img>
           <div className={styles.poly}></div>
         </div>
 
@@ -67,16 +67,6 @@ function Acceuil() {
       </div>
 
       <div className={styles.languageContainer}>
-        <div className={styles.cardcontainer}>
-          {" "}
-          <div className={styles.card}>
-            <img
-              src="html.png"
-              alt="Description de l'image"
-              className={styles.logo}
-            />
-          </div>
-        </div>
         <div className={styles.cardcontainer}>
           <div className={styles.card}>
             <img
@@ -131,7 +121,24 @@ function Acceuil() {
             />
           </div>
         </div>
-
+        <div className={styles.cardcontainer}>
+          <div className={styles.card}>
+            <img
+              src="expr.png"
+              alt="Description de l'image"
+              className={styles.logoex}
+            />
+          </div>
+        </div>
+        <div className={styles.cardcontainer}>
+          <div className={styles.card}>
+            <img
+              src="m.png"
+              alt="Description de l'image"
+              className={styles.logo}
+            />
+          </div>
+        </div>
         <div className={styles.cardcontainer}>
           <div className={styles.card}>
             <img

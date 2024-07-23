@@ -17,7 +17,7 @@ function Header({
         />
         <ul className={styles.list}>
           <li onClick={scrollToAcceuil} style={{ cursor: "pointer" }}>
-            01. Acceuil
+            01. Accueil
           </li>
           <li onClick={scrollToAbout} style={{ cursor: "pointer" }}>
             02. À propos

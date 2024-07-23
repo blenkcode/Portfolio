@@ -94,7 +94,8 @@ background-color: rgb(80, 150, 150);
 .photo{
 
     border: solid;
-    width: 60%;
+    width: 55%;
+    height: 50%;
 
     margin-top: 10px;
     z-index: 1;
@@ -103,7 +104,7 @@ background-color: rgb(80, 150, 150);
 }
 .poly{
 
-  width: 62%;
+  width: 55%;
 
   height: 100%;
  background-color: #00000024;
@@ -220,10 +221,21 @@ font-size: 18px;
     border-radius: 20px;
     padding: 10px;
     -webkit-transition:  0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
   
   }
+.logoex{
+  width: 180%;
+}
 
+.logomongo{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
   .cardcontainer{
     width: 90px;
     height: 90px;
@@ -244,6 +256,7 @@ font-size: 18px;
  }
  .iconBio{
   margin-right: 15px;
+  width: 20px;
  }
 
   .cardcontainer:hover .card{
@@ -415,154 +428,154 @@ background-color: rgb(80, 150, 150);
   
   }
 }
-@media (max-width: 1500px) {
-
-    .titleContainer{
-        width: 60%;
-        height: 400px;
-        position: absolute;
-        opacity: 1;
-        display: flex;
-        align-items: left;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 120px;
-      
-        
-         
-        }
-        .h1Style{
+@media (max-width: 1813px) {
+  .subtitle{
+    color: white;
+    font-size: 17px;
+    font-weight: 10;
+    margin: 0px;
+    padding-bottom: 30px;
+    margin-left: 0%;
+    margin-bottom: 0px;
+    font-family: "Source Code Pro", monospace;
+    margin-left: 8px;
+    padding-bottom: 10px;
     
-          font-size: 70px;
-          font-weight: bold;
-          text-align: left;
-          padding: 0px;
-          margin: 0px;
-         
-          letter-spacing: -5px;
-          background: linear-gradient(196deg,#0F182A  ,#142c31);
-          -webkit-background-clip: text;
-          color: transparent;
-          
-          font-family: "Lexend";
-        }
- 
+  
+  }
+  .subtitleName{
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    margin-left: 6px;
+    font-weight: bold;
+    
+    
+  
+    font-family: "Lexend", sans-serif;
+    
+  }
+
+  .h1Style{
+
+    font-size: 70px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+   
+    letter-spacing: -5px;
+    background: linear-gradient(196deg,#0F182A  ,#142c31);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+    font-family: "Lexend";
+  }
+
+  .cardcontainer{
+  
+      width: 90px;
+      height: 90px;
+      margin: 4px;
+     
+    }
+    .bioContainer{
+      grid-row-start: 1 ;
+      grid-row-end: 3;
+      grid-column-start:2 ;
+      grid-column-end: 3;
+      position: relative;
+      padding-top: 25%;
+      padding-left: 20%;
+      margin-left: 5%;
+      }
+
+
+      .card{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(137, 135, 135, 0.907);
+        margin: 5px;
+        border-radius: 20px;
+        padding: 10px;
+        -webkit-transition:  0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      
+      }
+      .titleContainer{
+        grid-row-start: 1 ;
+        grid-row-end: 2;
+        grid-column-start:1 ;
+        grid-column-end: 2;
+     
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 18%;
+        padding-top: 10%;
+    
+    
+    }
+    
+  }
+
+
+@media (max-width: 1484px) {
   .card{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-color: rgba(137, 135, 135, 0.907);
     margin: 5px;
     border-radius: 20px;
     padding: 10px;
     -webkit-transition:  0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
   
   }
-:hover.card{
-  width: 80px;
-  height:80px;
-  transition: all 1s ease;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.85);
-  -webkit-transition:  0.6s;
-}
-.main {
-   
-   
+
+  .cardcontainer{
   
-  height:110%;
-  width: 100%;
-  z-index: 10;
-  margin-left: 120px;
-  margin-top: 100px;
-
-
-display: flex;
-  align-items: center;
-  justify-content: center;
- 
-}
-.container{
-      
-    padding-top: 180px;
-    width: 100%;
-    
-}
-
-.photo{
-width: 240px;
-    border: solid;
+    width: 90px;
+    height: 90px;
+    margin: 3px;
    
-margin-left: 220px;
-    
-  
-}
-
-.p{
-    font-family: "Source Code Pro", monospace;
-    color: white;
-    padding: 30px;
-    margin-left: 190px;
-    
-}
-
-.list{
-    font-family: "Source Code Pro", monospace;
-    color: white;
-    margin-left: 195px;
-}
-
-}
-@media (max-width: 1300px) {
-    .titleContainer{
-        width: 100%;
-        height: 180px;
-        
-        opacity: 1;
-        display: flex;
-        align-items: left;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 180px;
-      
-        
-         
-        }
-        .h1Style{
-    
-          font-size: 45px;
-          font-weight: bold;
-          text-align: left;
-          padding: 0px;
-          margin: 0px;
-         margin-left: 30px;
-          letter-spacing: -5px;
-          background: linear-gradient(196deg,#0F182A  ,#142c31);
-          -webkit-background-clip: text;
-          color: transparent;
-          
-          font-family: "Lexend";
-        }
-        
+  }
+  .bioContainer{
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    position: relative;
+    padding-top: 25%;
+    padding-left: 20%;
+    margin-left: 8%;
+    }
     .subtitle{
       color: white;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 10;
       margin: 0px;
       padding-bottom: 30px;
-    
+      margin-left: 0%;
       margin-bottom: 0px;
       font-family: "Source Code Pro", monospace;
-      margin-left: 30px;
+      margin-left: 8px;
       padding-bottom: 10px;
       
     
     }
     .subtitleName{
       color: white;
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 300;
-      margin-left: 30px;
+      margin-left: 6px;
       font-weight: bold;
       
       
@@ -570,84 +583,76 @@ margin-left: 220px;
       font-family: "Lexend", sans-serif;
       
     }
-    
-    .lang{
-      display: flex;
-      margin-top: 50px;
+  
+    .h1Style{
+  
+      font-size: 60px;
+      font-weight: bold;
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+     
+      letter-spacing: -5px;
+      background: linear-gradient(196deg,#0F182A  ,#142c31);
+      -webkit-background-clip: text;
+      color: transparent;
+      
+      font-family: "Lexend";
     }
- 
-  .card{
-    width: 30px;
-    height: 3%;
-    background-color: rgba(137, 135, 135, 0.907);
-    margin: 5px;
-    border-radius: 20px;
-    padding: 10px;
-    -webkit-transition:  0.5s;
-   
+    .p{
+      font-family: "Source Code Pro", monospace;
+      color: white;
+  margin-top: 12%;
+  font-size: 14px;
+      width: 65%;
+      
+  }
+  
+  .list{
+      font-family: "Source Code Pro", monospace;
+      color: white;
+      list-style:none;
+      margin: 0px;
+      margin-top: 8%;
+      font-size: 12px;
+      padding: 0%;
+  }
+}
+
+@media (max-width: 1484px) {
+  .doodled{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  
+    border: solid 2px rgb(15, 24, 42);
+    top: 25%;
+    left: 49%;
+    animation: rotateCube 7s infinite linear;
+    transition: 2.5s ease-in-out;
   
   }
-:hover.card{
-  width: 40px;
-  height:40px;
-  transition: all 1s ease;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.85);
-  -webkit-transition:  0.6s;
-}
-.main {
-   
-   
+  .doodlea{
   
-  height:100%;
-  width: 100%;
-  z-index: 10;
-  margin:0px;
- 
-
-
-display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
- 
+    display: none;
+  
+  }
+  
+  .doodleb{
+    display: none;
+  
+  }
+  .doodlec{
+    display: none;
+  
+  }
+  .doodled{
+    display: none;
+  
+  }
+  
+  .doodlee{
+    display: none;
+  
+  }
 }
-.container{
-      
-    margin-left: 30px;
-       width: 80%;
-       padding: 0px;
-       
-   }
-   
-   .photo{
-   width: 150px;
-       border: solid;
-       margin-left: 0px;
-
-       
-     
-   }
-   
-   .p{
-       font-family: "Source Code Pro", monospace;
-       color: white;
-      padding:0px;
-       margin-left: 0px;
-       font-size: 15px;
-       padding-top: 5%;
-       
-   }
-   
-   .list{
-       font-family: "Source Code Pro", monospace;
-       color: white;
-       margin-left: 11px;
-       font-size: 12px;
-       padding:0px;
-       padding-top: 5%;
-       width: 80%;
-   }
- 
-}
-
