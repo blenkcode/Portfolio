@@ -92,3 +92,18 @@
    
 }
 }
+
+@media (max-width: 380px) {
+    .infos{
+ 
+        width: 310px;
+        color: white;
+        position: absolute;
+        font-family: "Source Code Pro", monospace;
+        font-weight: 300;
+        font-size: 13px;
+        right: 6%;
+        top: 5%;
+       
+    }
+}

@@ -926,3 +926,86 @@ justify-content: center;
   
 }
 
+@media (max-width: 380px) {
+  .doodled{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+  display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 22%;
+    left: 78%;
+    animation: rotateCube 7s infinite linear;
+    transition: 2.5s ease-in-out;
+  
+  }
+  .doodlea{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 18.5%;
+    left: 84%;
+    animation: rotateCube 7s infinite linear;
+    transition: ease-out;
+    animation-delay: 0.5s;
+    transition: 2.5s ease-in-out;
+  
+  }
+  
+  .doodleb{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 15.5%;
+    left: 89%;
+    animation: rotateCube 7s infinite linear;
+    animation-delay: 1s;
+    transition: 2.5s ease-in-out;
+  
+  }
+  .doodlec{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    display: inline;
+    border: solid 2px rgb(15, 24, 42);
+    top: 13%;
+    left: 90%;
+    animation: rotateCube 7s infinite linear;
+    animation-delay: 1.5s;
+    transition: 2.5s ease-in-out;
+  
+  }
+  
+  .doodlee{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+  
+    border: solid 2px rgb(15, 24, 42);
+    top: 46%;
+    left: 62%;
+    animation: rotateCube 7s infinite linear;
+    animation-delay: 2s;
+    transition: 1.5s ease-in-out;
+  
+  }
+  .main {
+
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 700px 200px;
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(63deg,rgb(15, 24, 42) -10%, #427ba4 46%, #0f182afa 100%);
+      
+    }
+  
+}
+

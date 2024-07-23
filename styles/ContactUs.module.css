@@ -144,3 +144,41 @@
         bottom:-25.5%;
     }
 }
+
+@media (max-width: 380px) {
+    .input{
+        border: none;
+        padding: 12px;
+        width: 110px;
+        margin: 10px;
+        height: 12px;
+        border-radius: 20px;
+        font-size: 14px;
+       
+        color: white;
+        border-bottom: solid 1px ;
+        border-left: solid 1px ;
+        background-color: rgba(154, 154, 154, 0.219);
+        color:#000000; ;
+      border: solid  #2e445c95 2px;
+    }
+    
+    .textarea{
+        border: none;
+        padding: 12px;
+        width: 270px;
+        margin: 10px;
+        height: 135px;
+        font-family:sans-serif;
+        border-radius: 20px;
+        font-size: 14px;
+        background-color: #46266084;
+        color: white;
+        border-bottom: solid 1px ;
+        border-left: solid 1px ;
+        background-color: rgba(154, 154, 154, 0.219);
+        color:#00000095 ; ;
+      border: solid #2e445c95  2px;
+    
+    }
+}
