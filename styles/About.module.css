@@ -123,15 +123,36 @@ perspective: 1000px;
     justify-content: center;
     align-items: center;
 }
+
+.git:hover{
+    background-color: rgb(95, 95, 95);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-left: 15px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .capsule{
     border-radius: 50%;
     width: 14px;
     margin-left: 8px;
 }
 .icons{
+    color: white;
     margin-left: 8px;
+    display: flex;
+    opacity: 1;
 
 }
+
 
 @media (max-width: 1813px) {
     .titre{

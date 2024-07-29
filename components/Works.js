@@ -65,7 +65,7 @@ function Works() {
           </div>
           <Slider className={styles.carousel}></Slider>
         </div>
-        <div className={styles.content}>
+        <div className={styles.contentHeaf}>
           <div className={styles.titleheaf}>Projet 02</div>
           <Slider2></Slider2>
           <div className={styles.textheaf}>
@@ -116,7 +116,7 @@ function Works() {
             </div> */}
             <img className={styles.imgretracted} src="/carb1.png"></img>
             <img className={styles.imgretracted} src="/carb2.png"></img>
-            <img className={styles.imgretracted} src="/carb2.png"></img>
+            <img className={styles.imgretracted} src="/carby3.png"></img>
           </div>
           <div className={styles.title}>Projet 03</div>
         </div>

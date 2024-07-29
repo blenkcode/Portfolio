@@ -66,9 +66,6 @@ function Home() {
       <div ref={contactRef} className={styles.contact}>
         <Contact />
       </div>
-      {/* <div  className={styles.foot}>
-        <Footer></Footer>
-      </div> */}
     </div>
   );
 }

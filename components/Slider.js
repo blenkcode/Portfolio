@@ -5,8 +5,8 @@ import styles from "../styles/Carousel.module.css";
 
 function Slider() {
   const data = [
-    { url: "/acceuilmindscape.png", id: 1 },
-    { url: "/mindscape1.png", id: 2 },
+    { url: "/mindscape1.png", id: 1 },
+    { url: "/acceuilmindscape.png", id: 2 },
     { url: "/mindscape3.png", id: 3 },
     { url: "/mindscape4.png", id: 4 },
     { url: "/mindscape5.png", id: 5 },

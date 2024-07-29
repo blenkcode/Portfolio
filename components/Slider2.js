@@ -5,10 +5,10 @@ import styles from "../styles/Carousel.module.css";
 
 function Slider2() {
   const data = [
-    { url: "/h1.png", id: 1 },
+    { url: "/h4.png", id: 1 },
     { url: "/h2.png", id: 2 },
-    { url: "/h3.png", id: 3 },
-    { url: "/h4.png", id: 4 },
+    { url: "/h1.png", id: 3 },
+    { url: "/h3.png", id: 4 },
   ];
 
   const customRenderIndicator = (onClickHandler, isSelected, index, label) => {
