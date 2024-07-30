@@ -37,21 +37,21 @@ function About() {
           </div>
           <div className={styles.links}>
             <a href="https://github.com/blenkcode" className={styles.git}>
-              Github{" "}
+              {" "}
               <FontAwesomeIcon className={styles.icons} icon={faGithub} />
             </a>
             <a
               href="https://www.linkedin.com/in/valentin-mor-a03174114/"
               className={styles.git}
             >
-              LinkedIn{" "}
+              {" "}
               <FontAwesomeIcon className={styles.icons} icon={faLinkedin} />
             </a>
             <a href="https://www.lacapsule.academy/" className={styles.git}>
-              La Capsule <img className={styles.capsule} src="./capsule.png" />
+              <img className={styles.capsule} src="./capsule.png" />
             </a>
             <a href="/MOR-VALENTIN-CV-2024.pdf" download className={styles.git}>
-              CV <FontAwesomeIcon className={styles.icons} icon={faFile} />
+              CV
             </a>
           </div>
         </div>

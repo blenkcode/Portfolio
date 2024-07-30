@@ -103,15 +103,16 @@ perspective: 1000px;
  margin-top: 0%;
  padding-bottom: 6%;
  margin-left: 4%;
+ 
    
     
 }
 
 .git{
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.974);
+    border-radius: 50%;
     width: fit-content;
-    padding: 8px;
+    padding: 10px;
     padding-left: 13px;
     padding-right: 13px;
     margin-left: 15px;
@@ -120,15 +121,17 @@ perspective: 1000px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+
 }
 
 .git:hover{
     background-color: rgb(95, 95, 95);
     border-radius: 20px;
     width: fit-content;
-    padding: 8px;
+    padding: 10px;
     padding-left: 13px;
     padding-right: 13px;
     margin-left: 15px;
@@ -142,17 +145,19 @@ perspective: 1000px;
 }
 .capsule{
     border-radius: 50%;
-    width: 14px;
-    margin-left: 8px;
+    width: 20px;
+ 
 }
+
 .icons{
-    color: white;
-    margin-left: 8px;
-    display: flex;
+    color: rgb(231, 231, 231);
+
+    width: 20px;
     opacity: 1;
 
-}
 
+
+}
 
 @media (max-width: 1813px) {
     .titre{
@@ -165,6 +170,7 @@ perspective: 1000px;
     }
     
 }
+
 
 @media (max-width: 1609px) {
     .titre{

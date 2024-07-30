@@ -61,7 +61,12 @@ function Works() {
               <u>Technologies utilisées :</u> Javascript, React, Next.js, Redux,
               MongoDB, CSS, Figma, Express, Socket.IO, Node.js.
             </p>
-            <a href="https://mind-scape-front-end.vercel.app/">Visitez</a>
+            <a
+              href="https://mind-scape-front-end.vercel.app/"
+              className={styles.link1}
+            >
+              Visitez
+            </a>
           </div>
           <Slider className={styles.carousel}></Slider>
         </div>
@@ -86,7 +91,12 @@ function Works() {
               <u>Technologies utilisées :</u> Javascript, React, Chart.js
               Next.js Redux, MongoDB, CSS, Figma, Express, Node.js.
             </p>
-            <a href="https://heaf-front-end-qzfj.vercel.app/">Visitez</a>
+            <a
+              href="https://heaf-front-end-qzfj.vercel.app/"
+              className={styles.link2}
+            >
+              Visitez
+            </a>
           </div>
         </div>
         <div className={styles.contentcarby}>
@@ -108,6 +118,12 @@ function Works() {
               Next.js Redux, MongoDB, CSS, Figma, Express, Node.js, external
               API.
             </p>
+            <a
+              className={styles.link3}
+              href="https://www.youtube.com/watch?v=aCd8L43envc"
+            >
+              Visionez demo
+            </a>
           </div>
           <div className={styles.imgupper}>
             {" "}

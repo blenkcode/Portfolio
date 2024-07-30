@@ -50,6 +50,92 @@
     width: 95%;
 
 }
+.link1{
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -15%;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+   
+  }
+  .link1:hover{
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -15%;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+ 
+   
+  }
+
+  .link2{
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -15%;
+    right: 4%;
+    padding-left: 15px;
+    padding-right: 15px;   
+    
+   
+  }
+  .link2:hover{
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -15%;
+    right: 4%;
+    padding-left: 15px;
+    padding-right: 15px; 
+   
+  }
+
+  .link3{
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -15%;
+    left: 4%;
+    padding-left: 15px;
+    padding-right: 15px;   
+  }
+  .link3:hover{
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -15%;
+    left: 4%;
+    padding-left: 15px;
+    padding-right: 15px;   
+  }
 
 .triangle {
     width: 0;
