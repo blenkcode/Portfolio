@@ -572,7 +572,7 @@ background-color: rgb(80, 150, 150);
 
   .cardcontainer{
   
-    width: 90px;
+    width: 70px;
     height: 90px;
     margin: 3px;
    
@@ -946,7 +946,8 @@ justify-content: center;
   
 }
 
-@media (max-width: 380px) {
+
+@media (max-width: 1024px) {
   .doodled{
     position: absolute;
     width: 25px;
