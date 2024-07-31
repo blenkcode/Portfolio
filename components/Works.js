@@ -65,7 +65,7 @@ function Works() {
               href="https://mind-scape-front-end.vercel.app/"
               className={styles.link1}
             >
-              Visitez
+              Visiter
             </a>
           </div>
           <Slider className={styles.carousel}></Slider>
@@ -95,7 +95,7 @@ function Works() {
               href="https://heaf-front-end-qzfj.vercel.app/"
               className={styles.link2}
             >
-              Visitez
+              Visiter
             </a>
           </div>
         </div>
@@ -122,7 +122,7 @@ function Works() {
               className={styles.link3}
               href="https://www.youtube.com/watch?v=aCd8L43envc"
             >
-              Visionez demo
+              Visioner demo
             </a>
           </div>
           <div className={styles.imgupper}>
