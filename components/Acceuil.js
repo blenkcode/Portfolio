@@ -60,10 +60,6 @@ function Acceuil() {
             />{" "}
             Maintenance
           </li>
-          <li className={styles.li}>
-            <FontAwesomeIcon icon={faUserGroup} className={styles.iconBio} />{" "}
-            Méthode Agile
-          </li>
         </ul>
       </div>
 
