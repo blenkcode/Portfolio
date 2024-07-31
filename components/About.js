@@ -50,7 +50,7 @@ function About() {
             <a href="https://www.lacapsule.academy/" className={styles.git}>
               <img className={styles.capsule} src="./capsule.png" />
             </a>
-            <a href="/MOR-VALENTIN-CV-2024.pdf" download className={styles.git}>
+            <a href="/VALENTIN-MOR-CV-2024.pdf" download className={styles.git}>
               CV
             </a>
           </div>
