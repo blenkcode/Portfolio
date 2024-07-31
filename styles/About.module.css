@@ -47,7 +47,7 @@ perspective: 1000px;
     box-shadow: 11px 2px 20px 12px #00000057;
 }
 .main {
-    background-image:  url("../public/fondcv.png");
+ 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
