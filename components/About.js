@@ -1,7 +1,7 @@
 import styles from "../styles/About.module.css";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
@@ -11,29 +11,38 @@ function About() {
 
       <div className={styles.contentContainer}>
         <div className={styles.photoContainer}>
-          <div className={styles.contentimg}>
+          {" "}
+          <div className={styles.contentLeft}>
             {" "}
-            <img className={styles.photo} src="./colors.png"></img>
+            <div className={styles.t}>MON STACK</div>
+            <p className={styles.pleft}>
+              J'utilise <b>JavaScript</b> pour vous offrir des sites modernes et
+              performants avec les technologies les plus avancées. <br></br>{" "}
+              <br></br>Pour le développement front-end, j'emploie les frameworks
+              <b> React et Next.js</b>, avec <b>Redux</b> pour la gestion des
+              états et du <b>CSS</b> pour un design soigné et des animations
+              captivantes.
+              <br /> <br></br>
+              Pour le back-end, je m'appuie sur <b>Node.js et Express</b>, ce
+              qui me permet de gérer les serveurs, les requêtes et les
+              opérations CRUD sur les bases de données de manière efficace.
+            </p>
           </div>
         </div>
 
         <div className={styles.pContainer}>
-          <div className={styles.titre}>A PROPOS DE MOI </div>
           <div className={styles.p}>
-            👋 Je suis un développeur FullStack Junior de 28 ans, basé à{" "}
-            <b>Montpellier</b>, à la recherche de mon premier poste dans le Web!
+            <div className={styles.titre}>A PROPOS DE MOI </div>
+            <div className={styles.hello}>👋</div> Je suis un développeur
+            FullStack React et Node.js basé à <b>Montpellier</b>,<br></br>
             <br></br>
-            <br></br>
-            Fort d'une carrière de six ans dans <b>l'industrie musicale</b>, où
-            j'ai acquis des compétences <b>techniques</b> et développé un esprit{" "}
-            <b>d'innovation</b>, je me suis passionné pour le développement web,
-            retrouvant des similitudes dans <b>l'imagination</b>,{" "}
-            <b>la conception</b> et la <b>réalisation</b> de projets.
-            <br></br>
-            <br></br> 🎓 Après plusieurs mois d'apprentissage en autodidacte,
-            j'ai décidé de me <b>former</b> professionnellement à{" "}
-            <b>La Capsule</b>, où j'ai obtenu le titre RNCP Concepteur
-            Développeur d'Applications Web & Mobile
+            Passionné par la <b>création</b> d'interfaces utilisateurs et
+            d'architecture back-end, je réalise vos futures applications web!
+            <br></br> <br></br>
+            Fort d'une carrière de six ans dans l'industrie musicale, où j'ai
+            développé <b>un esprit d'innovation</b> j'aime retrouver ces
+            similitudes dans l'imagination, la conception et la réalisation de
+            projets.
           </div>
           <div className={styles.links}>
             <a href="https://github.com/blenkcode" className={styles.git}>
@@ -47,11 +56,10 @@ function About() {
               {" "}
               <FontAwesomeIcon className={styles.icons} icon={faLinkedin} />
             </a>
-            <a href="https://www.lacapsule.academy/" className={styles.git}>
-              <img className={styles.capsule} src="./capsule.png" />
-            </a>
-            <a href="/VALENTIN-MOR-CV-2024.pdf" download className={styles.git}>
-              CV
+
+            <a href="/VALENTIN-MOR-CV-2024.pdf" download className={styles.cv}>
+              <FontAwesomeIcon className={styles.icons2} icon={faDownload} />
+              Télécharger un CV
             </a>
           </div>
         </div>

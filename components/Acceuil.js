@@ -46,7 +46,7 @@ function Acceuil() {
         <ul className={styles.list}>
           <li className={styles.li}>
             <FontAwesomeIcon icon={faLaptop} className={styles.iconBio} />{" "}
-            Développement Front-End & Architectures Back-End
+            Développement Front-End & Back-End
           </li>
 
           <li className={styles.li}>

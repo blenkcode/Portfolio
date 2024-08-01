@@ -120,7 +120,20 @@ background-color: rgb(80, 150, 150);
   transform: translateX(5px) rotate(12deg);
   border-radius: 5px;
   z-index: 0;
+  animation: polygone 1s ease-in-out;
 }
+@keyframes polygone {
+  0%{
+    transform: translateX(0px) rotate(0deg);
+    background-color: #00000017;
+    width: 57%;
+  
+  }100%{
+    transform: translateX(5px) rotate(12deg);
+    background-color: #00000024;
+    width: 55%;
+      
+  }}
 .p{
     font-family: "Source Code Pro", monospace;
     color: white;
@@ -157,13 +170,42 @@ font-size: 18px;
   background: linear-gradient(196deg,#0F182A  ,#142c31);
   -webkit-background-clip: text;
   color: transparent;
-  
+  animation:  titlefadein2 1.5s ease-out forwards;
   font-family: "Lexend";
 }
 
 
-
-
+@keyframes titlefadein{
+  0%{
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100%{
+    transform : translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes titlefadein2{
+  0%{
+    transform: translateY(30%);
+    opacity: 0;
+  
+  }
+  100%{
+    transform : translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes titlefadein3{
+  0%{
+    opacity: 0;
+  
+  }
+  100%{
+    opacity: 1;
+   
+  }
+}
 .subtitle{
   color: white;
   font-size: 20px;
@@ -175,6 +217,7 @@ font-size: 18px;
   font-family: "Source Code Pro", monospace;
   margin-left: 8px;
   padding-bottom: 10px;
+  animation: titlefadein 1.5s ease-in-out forwards;
   
 
 }
@@ -184,8 +227,7 @@ font-size: 18px;
   font-weight: 300;
   margin-left: 6px;
   font-weight: bold;
-  
-  
+ 
 
   font-family: "Lexend", sans-serif;
   
@@ -231,9 +273,12 @@ font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
+
    
   
   }
+
+
 .logoex{
   width: 180%;
 }
@@ -247,7 +292,7 @@ font-size: 18px;
     width: 90px;
     height: 90px;
     margin: 5px;
-   
+
   }
 
   .github{
@@ -280,7 +325,7 @@ font-size: 18px;
    transform: translateY(30px) translateX(-10px);
    
     background-color: rgba(255, 255, 255, 0.85);
-    -webkit-transition:  0.6s;
+    -webkit-transition:  ease-in-out 0.6s;
   }
   .github:hover .card{
     width: 80px;
@@ -289,7 +334,7 @@ font-size: 18px;
    transform: translateY(30px) translateX(-10px);
    
     background-color: rgba(255, 255, 255, 0.85);
-    -webkit-transition:  0.6s;
+    -webkit-transition:  ease-in-out 0.6s;
   }
 
 .scroll{
@@ -327,8 +372,9 @@ background-color: rgb(80, 150, 150);
   border: solid 2px rgb(15, 24, 42);
   top: 25%;
   left: 49%;
-  animation: rotateCube 7s infinite linear;
+  animation: rotateCube 5s forwards;
   transition: 2.5s ease-in-out;
+
 
 }
 .doodlea{
@@ -339,7 +385,7 @@ background-color: rgb(80, 150, 150);
   border: solid 2px rgb(15, 24, 42);
   top: 28%;
   left: 55%;
-  animation: rotateCube 7s infinite linear;
+  animation: rotateCube 5s forwards;
   transition: ease-out;
   animation-delay: 0.5s;
   transition: 2.5s ease-in-out;
@@ -354,7 +400,7 @@ background-color: rgb(80, 150, 150);
   border: solid 2px rgb(15, 24, 42);
   top: 33%;
   left: 59.5%;
-  animation: rotateCube 7s infinite linear;
+  animation: rotateCube 5s forwards;
   animation-delay: 1s;
   transition: 2.5s ease-in-out;
 
@@ -367,7 +413,7 @@ background-color: rgb(80, 150, 150);
   border: solid 2px rgb(15, 24, 42);
   top: 40%;
   left: 61.5%;
-  animation: rotateCube 7s infinite linear;
+  animation: rotateCube 5s forwards;
   animation-delay: 1.5s;
   transition: 2.5s ease-in-out;
 
@@ -381,7 +427,7 @@ background-color: rgb(80, 150, 150);
   border: solid 2px rgb(15, 24, 42);
   top: 46%;
   left: 62%;
-  animation: rotateCube 7s infinite linear;
+  animation: rotateCube 5s forwards;
   animation-delay: 2s;
   transition: 1.5s ease-in-out;
 
@@ -429,27 +475,15 @@ background-color: rgb(80, 150, 150);
   
   }
 
-  20% {
-    transform: rotateZ(90deg);
-    border-radius: 30px;
-    background-color: rgba(15, 24, 42, 0.79);
-
-  
-  
-  }
-  40% {
+ 
+  100% {
     transform: rotateZ(180deg);
     border-radius: 30px;
     background-color: rgb(15, 24, 42);
   
   
   }
-  100% {
-    transform: rotateZ(0);
-    
-    border-radius: 0px;
-  
-  }
+
 }
 @media (max-width: 1813px) {
   .subtitle{
@@ -943,11 +977,46 @@ justify-content: center;
     transition: 1.5s ease-in-out;
   
   }
+  .photo{
+
+    border: solid;
+    width: 20%;
+    height: 30%;
+
+    margin-top: 10px;
+    z-index: 1;
+    border-radius: 5px;
   
+}
+.poly{
+
+  width: 25%;
+
+  height: 100%;
+ background-color: #00000024;
+  position: absolute;
+  top: 0%;
+  transform: translateX(5px) rotate(12deg);
+  border-radius: 5px;
+  z-index: 0;
+  animation: polygone 1s ease-in-out;
+}
 }
 
 
 @media (max-width: 1024px) {
+  .photo{
+
+    border: solid;
+    width: 55%;
+    height: 50%;
+
+    margin-top: 10px;
+    z-index: 1;
+    border-radius: 5px;
+  
+}
+
   .doodled{
     position: absolute;
     width: 25px;

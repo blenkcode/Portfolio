@@ -28,14 +28,46 @@
     justify-content: center;
 width: 80%;
 
-height: 50px;
-margin-top: 5%;
+
+margin-top: 15%;
 perspective: 1000px;
 }
 .contentimg{
     width: 70%;
     /* transform: rotateX(30deg) rotateY(30deg); */
     transition: all 0.15s ease-out;
+}
+
+.contentLeft{
+    background-color:#427AA4;
+    width: 550px;
+    height:fit-content;
+    font-family: "Source Code Pro", monospace;
+    border-radius: 2%;
+    box-shadow: 11px 2px 20px 12px #00000057;
+    font-size: 22px;
+    position: relative;
+    border-top-left-radius: 15%;
+    
+
+}
+.pleft{
+    width: 80%;
+    font-family: "Source Code Pro", monospace;
+    padding: 10%
+    
+    
+    ;
+ 
+    font-size: 18px;
+}
+.t{
+    font-family: "Lexend";
+    position: absolute;
+    top:-5.8%;
+    left: 52%;
+    font-size: 40px;
+    color: white;
 }
 .photo{
     width: 100%;
@@ -47,7 +79,7 @@ perspective: 1000px;
     box-shadow: 11px 2px 20px 12px #00000057;
 }
 .main {
-    background-image: linear-gradient(63deg, rgba(15, 24, 42, 0) -10%, #427ba47b 46%, rgb(15, 24, 42) 100%), url("../public/fond\ cv.png");
+    background-image: linear-gradient(63deg, rgba(15, 24, 42, 0) -10%, #427ba47b 46%, rgb(15, 24, 42) 100%), url("../public/ho.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,6 +105,7 @@ perspective: 1000px;
     height: 550px;
     border-radius: 2%;
     box-shadow: 11px 2px 20px 12px #00000057;
+    border-bottom-right-radius: 15%;
     
 }
 
@@ -85,14 +118,16 @@ perspective: 1000px;
     
     
     ;
+    padding-top: 15%;
     font-size: 18px;
+    position: relative;
 }
 
 .titre{
     font-family: "Lexend";
     position: absolute;
-    top:5.5%;
-    left: 65%;
+    top:-8.2%;
+    left: 23%;
     font-size: 50px;
     color: white;
 }
@@ -100,22 +135,42 @@ perspective: 1000px;
 .links{
 
     display: flex;
+    align-items: center;
+    justify-content: center;
  margin-top: 0%;
  padding-bottom: 6%;
- margin-left: 4%;
+
  
    
     
 }
 
 .git{
-    background-color: rgba(0, 0, 0, 0.974);
-    border-radius: 50%;
+  
     width: fit-content;
-    padding: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-    margin-left: 15px;
+    padding: 15px;
+   
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+.git2{
+  
+    width: fit-content;
+    padding: 15px;
+   
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 14px;
     color: white;
     cursor: pointer;
@@ -127,70 +182,154 @@ perspective: 1000px;
 
 }
 
-.git:hover{
-    background-color: rgb(95, 95, 95);
-    border-radius: 20px;
+.cv{
     width: fit-content;
     padding: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-    margin-left: 15px;
+   border: black 3px solid;
+   border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 14px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.capsule{
-    border-radius: 50%;
-    width: 20px;
  
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 17px;
+    transition: 0.5s ease-in-out;
+}
+.cv:hover{
+    width: fit-content;
+    padding: 10px;
+   border: rgba(255, 255, 255, 0.721) 3px solid;
+   border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.746);
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.388);
 }
 
 .icons{
-    color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
 
-    width: 20px;
+    width: 40px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+
+
+}
+.hello{
+    font-size: 35px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    animation: rotateCube infinite linear 3s;
+
+}
+@keyframes rotateCube {
+    0% {
+      transform: rotateZ(-5deg);
+   
+    
+    }
+    50% {
+        transform: rotateZ(20deg);
+      
+      
+      
+      }
+  
+   
+    100% {
+      transform: rotateZ(-5deg);
+    
+    
+    
+    }
+  
+  }
+.icons:hover{
+    color: rgba(255, 255, 255, 0.718);
+
+    width: 40px;
+    opacity: 1;
+    transition: 0.2s ;
+
+
+}
+
+.icons2{
+   
+margin-right: 10px;
+    width: 30px;
     opacity: 1;
 
 
 
 }
 
-@media (max-width: 1813px) {
-    .titre{
-        font-family: "Lexend";
-        position: absolute;
-        top:5.5%;
-        left: 62%;
-        font-size: 50px;
-        color: white;
-    }
-    
-}
+@media (max-width: 1440px) {
+ 
 
-
-@media (max-width: 1609px) {
-    .titre{
-        font-family: "Lexend";
-        position: absolute;
-        top:5.5%;
-        left: 59%;
-        font-size: 50px;
-        color: white;
-    }
+    .icons{
+        color: rgb(0, 0, 0);
     
-}
-@media (max-width: 1457px) {
+        width: 35px;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    
+    
+    }
+    .cv{
+        width: fit-content;
+        padding: 10px;
+       border: black 3px solid;
+       border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 12px;
+     
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 13px;
+        transition: 0.5s ease-in-out;
+    }
+    .cv:hover{
+        width: fit-content;
+        padding: 10px;
+       border: rgba(255, 255, 255, 0.721) 3px solid;
+       border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.746);
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s ;
+        font-size: 17px;
+        background-color: rgba(0, 0, 0, 0.388);
+    }
     .titre{
-        font-family: "Lexend";
-        position: absolute;
-        top:13.9%;
-        left: 61%;
+     
         font-size: 40px;
-        color: white;
+    
     }
     .pContainer{
         background-color:#427AA4;
@@ -203,7 +342,8 @@ perspective: 1000px;
     .p{
         width: 85%;
         font-family: "Source Code Pro", monospace;
-        padding: 8%
+        padding: 8%;
+        padding-top:15%;
         
         
         ;
@@ -212,10 +352,82 @@ perspective: 1000px;
     
     
 }
+.contentLeft{
+    background-color:#427AA4;
+    width: 550px;
+    height:fit-content;
+    font-family: "Source Code Pro", monospace;
+    border-radius: 2%;
+    box-shadow: 11px 2px 20px 12px #00000057;
+    font-size: 22px;
+    position: relative;
+    border-top-left-radius: 15%;
+    
+
+}
+.pleft{
+    width: 80%;
+    font-family: "Source Code Pro", monospace;
+    padding: 10%
+    
+    
+    ;
+ 
+    font-size: 18px;
+}
+.t{
+    font-family: "Lexend";
+    position: absolute;
+    top:-5.8%;
+    left: 52%;
+    font-size: 35px;
+    color: white;
+}
 
 @media (max-width: 1300px) {
+    .contentLeft{
+        background-color:#427AA4;
+        width: 85%;
+        height:fit-content;
+        font-family: "Source Code Pro", monospace;
+        border-radius: 2%;
+        box-shadow: 11px 2px 20px 12px #00000057;
+        font-size: 20px;
+        position: relative;
+        border-top-left-radius: 15%;
+        margin-bottom: 15%;
+        
+        
+    
+    }
+    .pleft{
+        width: 80%;
+        font-family: "Source Code Pro", monospace;
+        padding: 10%
+        
+        
+        ;
+     
+        font-size: 14px;
+    }
+    .t{
+        font-family: "Lexend";
+        position: absolute;
+        top:-3.7%;
+        left: 52%;
+        font-size: 25px;
+        color: white;
+    }
+    .hello{
+        font-size: 25px;
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        animation: rotateCube infinite linear 3s;
+    
+    }
     .main {
-        background-image:  url("../public/fond\ cv.png");
+        background-image:  url("../public/ho.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -237,8 +449,8 @@ perspective: 1000px;
     
     .pContainer{
         background-color:#427AA4;
-        width: 300px;
-        height: 480px;
+        width: 85%;
+        height: 400px;
         border-radius: 2%;
         box-shadow: 11px 2px 20px 12px #00000057;
         
@@ -253,13 +465,14 @@ perspective: 1000px;
         
         
         ;
+        padding-top: 12%;
         font-size: 13px;
     }
     .titre{
         font-family: "Lexend";
         position: absolute;
-        top:13%;
-        left: 29%;
+        top:-5.8%;
+    left: 30%;
         font-size: 25px;
         color: white;
     }
@@ -280,15 +493,7 @@ perspective: 1000px;
         /* transform: rotateX(30deg) rotateY(30deg); */
         transition: all 0.15s ease-out;
     }
-    .photo{
-        width: 100%;
-    
-        border-radius: 40%;
-        border-top-left-radius: 60%;
-        margin-bottom: 8%;
-        border: solid 3px black;
-        box-shadow: 11px 2px 20px 12px #00000057;
-    }
+
     .links{
 
         display: flex;
@@ -300,7 +505,7 @@ perspective: 1000px;
         
     }
     .git{
-        background-color: rgb(0, 0, 0);
+       
         border-radius: 20px;
         width: fit-content;
         padding: 5px;
@@ -316,10 +521,6 @@ perspective: 1000px;
         justify-content: center;
         align-items: center;
     }
-    .capsule{
-        border-radius: 50%;
-        width: 14px;
-        margin-left: 8px;
-    }
+ 
    
 }
