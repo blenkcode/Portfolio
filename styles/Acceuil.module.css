@@ -177,7 +177,7 @@ font-size: 18px;
 
 @keyframes titlefadein{
   0%{
-    transform: translateY(30%);
+    transform: translateY(40%);
     opacity: 0;
   }
   100%{
@@ -187,7 +187,7 @@ font-size: 18px;
 }
 @keyframes titlefadein2{
   0%{
-    transform: translateY(30%);
+    transform: translateY(40%);
     opacity: 0;
   
   }
@@ -373,6 +373,7 @@ background-color: rgb(80, 150, 150);
   top: 25%;
   left: 49%;
   animation: rotateCube 5s forwards;
+  border-radius: 10px;
   transition: 2.5s ease-in-out;
 
 
@@ -388,6 +389,7 @@ background-color: rgb(80, 150, 150);
   animation: rotateCube 5s forwards;
   transition: ease-out;
   animation-delay: 0.5s;
+  border-radius: 10px;
   transition: 2.5s ease-in-out;
 
 }
@@ -402,6 +404,7 @@ background-color: rgb(80, 150, 150);
   left: 59.5%;
   animation: rotateCube 5s forwards;
   animation-delay: 1s;
+  border-radius: 10px;
   transition: 2.5s ease-in-out;
 
 }
@@ -415,6 +418,7 @@ background-color: rgb(80, 150, 150);
   left: 61.5%;
   animation: rotateCube 5s forwards;
   animation-delay: 1.5s;
+  border-radius: 10px;
   transition: 2.5s ease-in-out;
 
 }
@@ -427,50 +431,18 @@ background-color: rgb(80, 150, 150);
   border: solid 2px rgb(15, 24, 42);
   top: 46%;
   left: 62%;
+  border-radius: 10px;
   animation: rotateCube 5s forwards;
   animation-delay: 2s;
   transition: 1.5s ease-in-out;
 
 }
-.doodlea:hover{
-  width: 35px;
-  height: 35px;
-  transition: 0.2s ease-in-out;
 
-  border: solid 2px rgba(255, 255, 255, 0.557);
-}
-.doodleb:hover{
-  width: 25px;
-  height: 25px;
-  transition: 0.2s ease-in-out;
-
-  border: solid 2px rgba(255, 255, 255, 0.557);
-}
-.doodlec:hover{
-  width: 15px;
-  height: 15px;
-  transition: 0.2s ease-in-out;
-
-  border: solid 2px rgba(255, 255, 255, 0.557);
-}
-.doodled:hover{
-  width: 45px;
-  height: 45px;
-  transition: 0.2s ease-in-out;
- 
-  border: solid 2px rgba(255, 255, 255, 0.557);
-}
-.doodlee:hover{
-  width: 5px;
-  height: 5px;
-  transition: 0.2s ease-in-out;
- 
-  border: solid 2px rgba(255, 255, 255, 0.997);
-}
 @keyframes rotateCube {
   0% {
     transform: rotateZ(0deg);
-  border-radius: 0px;
+    border: solid 2px rgb(255, 255, 255);
+  border-radius: 10px;
   background-color: rgba(15, 24, 42, 0);
   
   }
@@ -479,6 +451,7 @@ background-color: rgb(80, 150, 150);
   100% {
     transform: rotateZ(180deg);
     border-radius: 30px;
+    border: solid 2px rgb(15, 24, 42);
     background-color: rgb(15, 24, 42);
   
   
@@ -1008,7 +981,7 @@ justify-content: center;
   .photo{
 
     border: solid;
-    width: 55%;
+    width: 20%;
     height: 50%;
 
     margin-top: 10px;
@@ -1098,4 +1071,16 @@ justify-content: center;
     }
   
 }
+@media (max-width: 450px) {
+  .photo{
 
+    border: solid;
+    width: 55%;
+    height: 30%;
+
+    margin-top: 10px;
+    z-index: 1;
+    border-radius: 5px;
+  
+}
+}
