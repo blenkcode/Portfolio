@@ -27,6 +27,7 @@ transition: 4s ease;
   height: 700px;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 
@@ -48,7 +49,7 @@ transition: 4s ease;
     transition: 1.5s ease;
     box-shadow: 11px 2px 20px 12px #00000057;
     border-bottom-right-radius: 15%;
-    display: none;
+  
   }
   .visible{
     width: 500px;
@@ -82,7 +83,7 @@ transition: 4s ease;
     margin-top: 20%;
     transform: translateX(1000px);
     transition: 1.5s ease;
-    display: none;
+  
   }
 
   .visible2{
